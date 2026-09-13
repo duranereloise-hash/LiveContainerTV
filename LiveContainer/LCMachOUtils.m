@@ -3,6 +3,7 @@
 @import MachO;
 #import "../litehook/src/litehook.h"
 #import "LCUtils.h"
+#import "utils.h"
 #include "dyld_cache_format.h"
 
 static uint32_t rnd32(uint32_t v, uint32_t r) {

@@ -1,0 +1,461 @@
+Build using xcodebuild command	Set up job	﻿2026-09-12T13:47:26.7338390Z Current runner version: '2.337.0'
+Build using xcodebuild command	Set up job	2026-09-12T13:47:26.7379910Z ##[group]Runner Image Provisioner
+Build using xcodebuild command	Set up job	2026-09-12T13:47:26.7381650Z Hosted Compute Agent
+Build using xcodebuild command	Set up job	2026-09-12T13:47:26.7382380Z Version: 20260828.587
+Build using xcodebuild command	Set up job	2026-09-12T13:47:26.7383410Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+Build using xcodebuild command	Set up job	2026-09-12T13:47:26.7384110Z Build Date: 2026-08-28T16:44:25Z
+Build using xcodebuild command	Set up job	2026-09-12T13:47:26.7385120Z Worker ID: {cd870797-2eaa-473e-b59a-849dcd6ee107}
+Build using xcodebuild command	Set up job	2026-09-12T13:47:26.7386180Z Azure Region: westus
+Build using xcodebuild command	Set up job	2026-09-12T13:47:26.7386630Z ##[endgroup]
+Build using xcodebuild command	Set up job	2026-09-12T13:47:26.7388860Z ##[group]Operating System
+Build using xcodebuild command	Set up job	2026-09-12T13:47:26.7389590Z macOS
+Build using xcodebuild command	Set up job	2026-09-12T13:47:26.7390200Z 26.6.2
+Build using xcodebuild command	Set up job	2026-09-12T13:47:26.7390780Z 25G83
+Build using xcodebuild command	Set up job	2026-09-12T13:47:26.7391360Z ##[endgroup]
+Build using xcodebuild command	Set up job	2026-09-12T13:47:26.7391790Z ##[group]Runner Image
+Build using xcodebuild command	Set up job	2026-09-12T13:47:26.7392230Z Image: macos-26-arm64
+Build using xcodebuild command	Set up job	2026-09-12T13:47:26.7392610Z Version: 20260907.0351.1
+Build using xcodebuild command	Set up job	2026-09-12T13:47:26.7393420Z Included Software: https://github.com/actions/runner-images/blob/macos-26-arm64/20260907.0351/images/macos/macos-26-arm64-Readme.md
+Build using xcodebuild command	Set up job	2026-09-12T13:47:26.7394670Z Image Release: https://github.com/actions/runner-images/releases/tag/macos-26-arm64%2F20260907.0351
+Build using xcodebuild command	Set up job	2026-09-12T13:47:26.7395350Z ##[endgroup]
+Build using xcodebuild command	Set up job	2026-09-12T13:47:26.7396190Z ##[group]GITHUB_TOKEN Permissions
+Build using xcodebuild command	Set up job	2026-09-12T13:47:26.7398100Z Contents: read
+Build using xcodebuild command	Set up job	2026-09-12T13:47:26.7398680Z Metadata: read
+Build using xcodebuild command	Set up job	2026-09-12T13:47:26.7399130Z Packages: read
+Build using xcodebuild command	Set up job	2026-09-12T13:47:26.7399550Z ##[endgroup]
+Build using xcodebuild command	Set up job	2026-09-12T13:47:26.7401280Z Secret source: Actions
+Build using xcodebuild command	Set up job	2026-09-12T13:47:26.7401930Z Cache mode: write
+Build using xcodebuild command	Set up job	2026-09-12T13:47:26.7402500Z Prepare workflow directory
+Build using xcodebuild command	Set up job	2026-09-12T13:47:26.7721680Z Prepare all required actions
+Build using xcodebuild command	Set up job	2026-09-12T13:47:26.7758770Z Getting action download info
+Build using xcodebuild command	Set up job	2026-09-12T13:47:27.0863970Z Download action repository 'maxim-lobanov/setup-xcode@v1' (SHA:ed7a3b1fda3918c0306d1b724322adc0b8cc0a90)
+Build using xcodebuild command	Set up job	2026-09-12T13:47:27.9966630Z Download action repository 'actions/checkout@v6' (SHA:d23441a48e516b6c34aea4fa41551a30e30af803)
+Build using xcodebuild command	Set up job	2026-09-12T13:47:28.0891130Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+Build using xcodebuild command	Set up job	2026-09-12T13:47:28.2458100Z Download action repository 'actions/upload-artifact@v7' (SHA:043fb46d1a93c77aae656e7c1c64a875d1fc6a0a)
+Build using xcodebuild command	Set up job	2026-09-12T13:47:28.5080530Z Complete job name: Build using xcodebuild command
+Build using xcodebuild command	Run maxim-lobanov/setup-xcode@v1	﻿2026-09-12T13:47:28.5600480Z ##[group]Run maxim-lobanov/setup-xcode@v1
+Build using xcodebuild command	Run maxim-lobanov/setup-xcode@v1	2026-09-12T13:47:28.5601250Z with:
+Build using xcodebuild command	Run maxim-lobanov/setup-xcode@v1	2026-09-12T13:47:28.5601620Z   xcode-version: 26.2
+Build using xcodebuild command	Run maxim-lobanov/setup-xcode@v1	2026-09-12T13:47:28.5602090Z env:
+Build using xcodebuild command	Run maxim-lobanov/setup-xcode@v1	2026-09-12T13:47:28.5602440Z   scheme: LiveContainer
+Build using xcodebuild command	Run maxim-lobanov/setup-xcode@v1	2026-09-12T13:47:28.5602850Z   archive_path: archive
+Build using xcodebuild command	Run maxim-lobanov/setup-xcode@v1	2026-09-12T13:47:28.5603240Z ##[endgroup]
+Build using xcodebuild command	Run maxim-lobanov/setup-xcode@v1	2026-09-12T13:47:28.9859360Z Switching Xcode to version '26.2'...
+Build using xcodebuild command	Run maxim-lobanov/setup-xcode@v1	2026-09-12T13:47:29.0610400Z Xcode is set to 26.2.0 (17C52)
+Build using xcodebuild command	Checkout	﻿2026-09-12T13:47:29.1594950Z ##[group]Run actions/checkout@v6
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.1595520Z with:
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.1595940Z   submodules: recursive
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.1596390Z   repository: duranereloise-hash/LiveContainerTV
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.1600130Z   token: ***
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.1600630Z   ssh-strict: true
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.1601010Z   ssh-user: git
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.1601410Z   persist-credentials: true
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.1601960Z   clean: true
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.1602380Z   sparse-checkout-cone-mode: true
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.1602910Z   fetch-depth: 1
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.1603330Z   fetch-tags: false
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.1603700Z   show-progress: true
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.1604150Z   lfs: false
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.1604620Z   set-safe-directory: true
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.1605070Z   allow-unsafe-pr-checkout: false
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.1605530Z env:
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.1605910Z   scheme: LiveContainer
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.1606330Z   archive_path: archive
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.1606780Z   MD_APPLE_SDK_ROOT: /Applications/Xcode_26.2.app
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.1607410Z ##[endgroup]
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.3258270Z Syncing repository: duranereloise-hash/LiveContainerTV
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.3260150Z ##[group]Getting Git version info
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.3260860Z Working directory is '/Users/runner/work/LiveContainerTV/LiveContainerTV'
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.3262920Z [command]/opt/homebrew/bin/git version
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.4091170Z git version 2.55.0
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.4105180Z ##[endgroup]
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.4112510Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/e94699bf-e17d-4bde-8b0b-4cccf6c0d112/.gitconfig'
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.4120280Z Temporarily overriding HOME='/Users/runner/work/_temp/e94699bf-e17d-4bde-8b0b-4cccf6c0d112' before making global git config changes
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.4121430Z Adding repository directory to the temporary git global config as a safe directory
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.4124250Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/LiveContainerTV/LiveContainerTV
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.4237440Z Deleting the contents of '/Users/runner/work/LiveContainerTV/LiveContainerTV'
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.4239640Z ##[group]Determining repository object format
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.4240900Z ##[endgroup]
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.4242280Z ##[group]Initializing the repository
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.4244890Z [command]/opt/homebrew/bin/git init /Users/runner/work/LiveContainerTV/LiveContainerTV
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.4443900Z hint: Using 'master' as the name for the initial branch. This default branch name
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.4445140Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.4446040Z hint: to use in all of your new repositories, which will suppress this warning,
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.4446800Z hint: call:
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.4447260Z hint:
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.4447780Z hint: 	git config --global init.defaultBranch <name>
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.4448380Z hint:
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.4449010Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.4449950Z hint: 'development'. The just-created branch can be renamed via this command:
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.4450540Z hint:
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.4450880Z hint: 	git branch -m <name>
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.4451270Z hint:
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.4451880Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.4452900Z Initialized empty Git repository in /Users/runner/work/LiveContainerTV/LiveContainerTV/.git/
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.4454630Z [command]/opt/homebrew/bin/git remote add origin https://github.com/duranereloise-hash/LiveContainerTV
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.4556580Z ##[endgroup]
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.4557420Z ##[group]Disabling automatic garbage collection
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.4558970Z [command]/opt/homebrew/bin/git config --local gc.auto 0
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.4628460Z ##[endgroup]
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.4629320Z ##[group]Setting up auth
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.4629840Z Removing SSH command configuration
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.4633900Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.4700460Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.5948290Z Removing HTTP extra header
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.5951580Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.6033230Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.7164610Z Removing includeIf entries pointing to credentials config files
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.7167230Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.7253010Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.9420950Z [command]/opt/homebrew/bin/git config --file /Users/runner/work/_temp/git-credentials-9c3ce979-add1-436e-93d7-55a62ec32fda.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.9753030Z [command]/opt/homebrew/bin/git config --local includeIf.gitdir:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git.path /Users/runner/work/_temp/git-credentials-9c3ce979-add1-436e-93d7-55a62ec32fda.config
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.9922970Z [command]/opt/homebrew/bin/git config --local includeIf.gitdir:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git/worktrees/*.path /Users/runner/work/_temp/git-credentials-9c3ce979-add1-436e-93d7-55a62ec32fda.config
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.9940610Z [command]/opt/homebrew/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-9c3ce979-add1-436e-93d7-55a62ec32fda.config
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.9952620Z [command]/opt/homebrew/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-9c3ce979-add1-436e-93d7-55a62ec32fda.config
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.9993900Z ##[endgroup]
+Build using xcodebuild command	Checkout	2026-09-12T13:47:29.9995770Z ##[group]Fetching the repository
+Build using xcodebuild command	Checkout	2026-09-12T13:47:30.0000370Z [command]/opt/homebrew/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +60b17c754953282bc3bd5b9cf6beb4086f15ad4b:refs/remotes/origin/main
+Build using xcodebuild command	Checkout	2026-09-12T13:47:30.7185950Z From https://github.com/duranereloise-hash/LiveContainerTV
+Build using xcodebuild command	Checkout	2026-09-12T13:47:30.7188890Z  * [new ref]         60b17c754953282bc3bd5b9cf6beb4086f15ad4b -> origin/main
+Build using xcodebuild command	Checkout	2026-09-12T13:47:30.7217570Z [command]/opt/homebrew/bin/git branch --list --remote origin/main
+Build using xcodebuild command	Checkout	2026-09-12T13:47:30.7382000Z   origin/main
+Build using xcodebuild command	Checkout	2026-09-12T13:47:30.7424360Z [command]/opt/homebrew/bin/git rev-parse refs/remotes/origin/main
+Build using xcodebuild command	Checkout	2026-09-12T13:47:30.7546810Z 60b17c754953282bc3bd5b9cf6beb4086f15ad4b
+Build using xcodebuild command	Checkout	2026-09-12T13:47:30.7553610Z ##[endgroup]
+Build using xcodebuild command	Checkout	2026-09-12T13:47:30.7556610Z ##[group]Determining the checkout info
+Build using xcodebuild command	Checkout	2026-09-12T13:47:30.7559900Z ##[endgroup]
+Build using xcodebuild command	Checkout	2026-09-12T13:47:30.7561860Z [command]/opt/homebrew/bin/git sparse-checkout disable
+Build using xcodebuild command	Checkout	2026-09-12T13:47:30.7713960Z [command]/opt/homebrew/bin/git config --local --unset-all extensions.worktreeConfig
+Build using xcodebuild command	Checkout	2026-09-12T13:47:30.7872360Z ##[group]Checking out the ref
+Build using xcodebuild command	Checkout	2026-09-12T13:47:30.7879010Z [command]/opt/homebrew/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Build using xcodebuild command	Checkout	2026-09-12T13:47:30.8545730Z Switched to a new branch 'main'
+Build using xcodebuild command	Checkout	2026-09-12T13:47:30.8552300Z branch 'main' set up to track 'origin/main'.
+Build using xcodebuild command	Checkout	2026-09-12T13:47:30.8558400Z ##[endgroup]
+Build using xcodebuild command	Checkout	2026-09-12T13:47:30.8561900Z ##[group]Setting up auth for fetching submodules
+Build using xcodebuild command	Checkout	2026-09-12T13:47:30.8570840Z [command]/opt/homebrew/bin/git config --file /Users/runner/work/_temp/git-credentials-9c3ce979-add1-436e-93d7-55a62ec32fda.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Build using xcodebuild command	Checkout	2026-09-12T13:47:30.8649170Z [command]/opt/homebrew/bin/git config --global include.path /Users/runner/work/_temp/git-credentials-9c3ce979-add1-436e-93d7-55a62ec32fda.config
+Build using xcodebuild command	Checkout	2026-09-12T13:47:30.8731540Z [command]/opt/homebrew/bin/git config --global --unset-all url.https://github.com/.insteadOf
+Build using xcodebuild command	Checkout	2026-09-12T13:47:30.8808330Z [command]/opt/homebrew/bin/git config --global --add url.https://github.com/.insteadOf git@github.com:
+Build using xcodebuild command	Checkout	2026-09-12T13:47:30.8881280Z [command]/opt/homebrew/bin/git config --global --add url.https://github.com/.insteadOf org-309539288@github.com:
+Build using xcodebuild command	Checkout	2026-09-12T13:47:30.8957880Z ##[endgroup]
+Build using xcodebuild command	Checkout	2026-09-12T13:47:30.8961620Z ##[group]Fetching submodules
+Build using xcodebuild command	Checkout	2026-09-12T13:47:30.8964190Z [command]/opt/homebrew/bin/git submodule sync --recursive
+Build using xcodebuild command	Checkout	2026-09-12T13:47:30.9964300Z [command]/opt/homebrew/bin/git -c protocol.version=2 submodule update --init --force --depth=1 --recursive
+Build using xcodebuild command	Checkout	2026-09-12T13:47:31.1721160Z Submodule 'OpenSSL' (https://github.com/krzyzanowskim/OpenSSL) registered for path 'OpenSSL'
+Build using xcodebuild command	Checkout	2026-09-12T13:47:31.1821490Z Submodule 'litehook' (https://github.com/LiveContainer/litehook) registered for path 'litehook'
+Build using xcodebuild command	Checkout	2026-09-12T13:47:31.1922240Z Cloning into '/Users/runner/work/LiveContainerTV/LiveContainerTV/OpenSSL'...
+Build using xcodebuild command	Checkout	2026-09-12T13:47:35.0075030Z Cloning into '/Users/runner/work/LiveContainerTV/LiveContainerTV/litehook'...
+Build using xcodebuild command	Checkout	2026-09-12T13:47:41.9455760Z From https://github.com/krzyzanowskim/OpenSSL
+Build using xcodebuild command	Checkout	2026-09-12T13:47:41.9456530Z  * branch            623c84da314e85363236507ca38a4bde65df21c3 -> FETCH_HEAD
+Build using xcodebuild command	Checkout	2026-09-12T13:47:43.1224620Z Submodule path 'OpenSSL': checked out '623c84da314e85363236507ca38a4bde65df21c3'
+Build using xcodebuild command	Checkout	2026-09-12T13:47:43.1579970Z Submodule path 'litehook': checked out '8025e0c8ebdf5cdd1d2a4f45025813234bf9dc55'
+Build using xcodebuild command	Checkout	2026-09-12T13:47:43.1698270Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local gc.auto 0
+Build using xcodebuild command	Checkout	2026-09-12T13:47:43.2518040Z Entering 'OpenSSL'
+Build using xcodebuild command	Checkout	2026-09-12T13:47:43.2665390Z Entering 'litehook'
+Build using xcodebuild command	Checkout	2026-09-12T13:47:43.2824750Z ##[endgroup]
+Build using xcodebuild command	Checkout	2026-09-12T13:47:43.2839670Z ##[group]Persisting credentials for submodules
+Build using xcodebuild command	Checkout	2026-09-12T13:47:43.2840750Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'url\.https\:\/\/github\.com\/\.insteadOf' && git config --local --unset-all 'url.https://github.com/.insteadOf' || :"
+Build using xcodebuild command	Checkout	2026-09-12T13:47:43.3521720Z Entering 'OpenSSL'
+Build using xcodebuild command	Checkout	2026-09-12T13:47:43.3693330Z Entering 'litehook'
+Build using xcodebuild command	Checkout	2026-09-12T13:47:43.4149300Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Build using xcodebuild command	Checkout	2026-09-12T13:47:43.5358230Z Entering 'OpenSSL'
+Build using xcodebuild command	Checkout	2026-09-12T13:47:43.5460460Z file:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/OpenSSL/config	remote.origin.url
+Build using xcodebuild command	Checkout	2026-09-12T13:47:43.5562240Z Entering 'litehook'
+Build using xcodebuild command	Checkout	2026-09-12T13:47:43.5764110Z file:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/litehook/config	remote.origin.url
+Build using xcodebuild command	Checkout	2026-09-12T13:47:43.5976890Z [command]/opt/homebrew/bin/git config --file /Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/OpenSSL/config includeIf.gitdir:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/OpenSSL.path /Users/runner/work/_temp/git-credentials-9c3ce979-add1-436e-93d7-55a62ec32fda.config
+Build using xcodebuild command	Checkout	2026-09-12T13:47:43.6110730Z [command]/opt/homebrew/bin/git config --file /Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/OpenSSL/config includeIf.gitdir:/github/workspace/.git/modules/OpenSSL.path /github/runner_temp/git-credentials-9c3ce979-add1-436e-93d7-55a62ec32fda.config
+Build using xcodebuild command	Checkout	2026-09-12T13:47:43.6119120Z [command]/opt/homebrew/bin/git config --file /Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/litehook/config includeIf.gitdir:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/litehook.path /Users/runner/work/_temp/git-credentials-9c3ce979-add1-436e-93d7-55a62ec32fda.config
+Build using xcodebuild command	Checkout	2026-09-12T13:47:43.6121480Z [command]/opt/homebrew/bin/git config --file /Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/litehook/config includeIf.gitdir:/github/workspace/.git/modules/litehook.path /github/runner_temp/git-credentials-9c3ce979-add1-436e-93d7-55a62ec32fda.config
+Build using xcodebuild command	Checkout	2026-09-12T13:47:43.6174420Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --add 'url.https://github.com/.insteadOf' 'git@github.com:'
+Build using xcodebuild command	Checkout	2026-09-12T13:47:43.6937010Z Entering 'OpenSSL'
+Build using xcodebuild command	Checkout	2026-09-12T13:47:43.7076910Z Entering 'litehook'
+Build using xcodebuild command	Checkout	2026-09-12T13:47:43.7219820Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --add 'url.https://github.com/.insteadOf' 'org-309539288@github.com:'
+Build using xcodebuild command	Checkout	2026-09-12T13:47:43.8080120Z Entering 'OpenSSL'
+Build using xcodebuild command	Checkout	2026-09-12T13:47:43.8227970Z Entering 'litehook'
+Build using xcodebuild command	Checkout	2026-09-12T13:47:43.8390790Z ##[endgroup]
+Build using xcodebuild command	Checkout	2026-09-12T13:47:43.8515450Z [command]/opt/homebrew/bin/git log -1 --format=%H
+Build using xcodebuild command	Checkout	2026-09-12T13:47:43.8567440Z 60b17c754953282bc3bd5b9cf6beb4086f15ad4b
+Build using xcodebuild command	Set Scheme	﻿2026-09-12T13:47:43.8707390Z ##[group]Run if [ $scheme = default ]
+Build using xcodebuild command	Set Scheme	2026-09-12T13:47:43.8707730Z ^[[36;1mif [ $scheme = default ]^[[0m
+Build using xcodebuild command	Set Scheme	2026-09-12T13:47:43.8707990Z ^[[36;1mthen^[[0m
+Build using xcodebuild command	Set Scheme	2026-09-12T13:47:43.8708290Z ^[[36;1m  scheme_list=$(xcodebuild -list -json | tr -d "\n")^[[0m
+Build using xcodebuild command	Set Scheme	2026-09-12T13:47:43.8708800Z ^[[36;1m  scheme=$(echo $scheme_list | ruby -e "require 'json'; puts JSON.parse(STDIN.gets)['project']['targets'][0]")^[[0m
+Build using xcodebuild command	Set Scheme	2026-09-12T13:47:43.8709360Z ^[[36;1m  echo Using default scheme: $scheme^[[0m
+Build using xcodebuild command	Set Scheme	2026-09-12T13:47:43.8713860Z ^[[36;1melse^[[0m
+Build using xcodebuild command	Set Scheme	2026-09-12T13:47:43.8714120Z ^[[36;1m  echo Using configured scheme: $scheme^[[0m
+Build using xcodebuild command	Set Scheme	2026-09-12T13:47:43.8714370Z ^[[36;1mfi^[[0m
+Build using xcodebuild command	Set Scheme	2026-09-12T13:47:43.8714640Z ^[[36;1mecho "scheme=$scheme" >> $GITHUB_OUTPUT^[[0m
+Build using xcodebuild command	Set Scheme	2026-09-12T13:47:43.8757130Z shell: /bin/bash -e {0}
+Build using xcodebuild command	Set Scheme	2026-09-12T13:47:43.8757430Z env:
+Build using xcodebuild command	Set Scheme	2026-09-12T13:47:43.8757620Z   scheme: LiveContainer
+Build using xcodebuild command	Set Scheme	2026-09-12T13:47:43.8757880Z   archive_path: archive
+Build using xcodebuild command	Set Scheme	2026-09-12T13:47:43.8758120Z   MD_APPLE_SDK_ROOT: /Applications/Xcode_26.2.app
+Build using xcodebuild command	Set Scheme	2026-09-12T13:47:43.8758470Z ##[endgroup]
+Build using xcodebuild command	Set Scheme	2026-09-12T13:47:43.9254790Z Using configured scheme: LiveContainer
+Build using xcodebuild command	Set filetype_parameter	﻿2026-09-12T13:47:43.9305590Z ##[group]Run filetype_parameter=`ls -A | grep -i \\.xcworkspace\$ && echo workspace || echo project`
+Build using xcodebuild command	Set filetype_parameter	2026-09-12T13:47:43.9306210Z ^[[36;1mfiletype_parameter=`ls -A | grep -i \\.xcworkspace\$ && echo workspace || echo project`^[[0m
+Build using xcodebuild command	Set filetype_parameter	2026-09-12T13:47:43.9306750Z ^[[36;1mecho "filetype_parameter=$filetype_parameter" >> $GITHUB_OUTPUT^[[0m
+Build using xcodebuild command	Set filetype_parameter	2026-09-12T13:47:43.9336940Z shell: /bin/bash -e {0}
+Build using xcodebuild command	Set filetype_parameter	2026-09-12T13:47:43.9337210Z env:
+Build using xcodebuild command	Set filetype_parameter	2026-09-12T13:47:43.9337450Z   scheme: LiveContainer
+Build using xcodebuild command	Set filetype_parameter	2026-09-12T13:47:43.9337690Z   archive_path: archive
+Build using xcodebuild command	Set filetype_parameter	2026-09-12T13:47:43.9338070Z   MD_APPLE_SDK_ROOT: /Applications/Xcode_26.2.app
+Build using xcodebuild command	Set filetype_parameter	2026-09-12T13:47:43.9338400Z ##[endgroup]
+Build using xcodebuild command	Set file_to_build	﻿2026-09-12T13:47:43.9717260Z ##[group]Run file_to_build=`ls -A | grep -i \\.xcworkspace\$ || ls -A | grep -i \\.xcodeproj\$`
+Build using xcodebuild command	Set file_to_build	2026-09-12T13:47:43.9717990Z ^[[36;1mfile_to_build=`ls -A | grep -i \\.xcworkspace\$ || ls -A | grep -i \\.xcodeproj\$`^[[0m
+Build using xcodebuild command	Set file_to_build	2026-09-12T13:47:43.9718420Z ^[[36;1mfile_to_build=`echo $file_to_build | awk '{$1=$1;print}'`^[[0m
+Build using xcodebuild command	Set file_to_build	2026-09-12T13:47:43.9718770Z ^[[36;1mecho "file_to_build=$file_to_build" >> $GITHUB_OUTPUT^[[0m
+Build using xcodebuild command	Set file_to_build	2026-09-12T13:47:43.9750310Z shell: /bin/bash -e {0}
+Build using xcodebuild command	Set file_to_build	2026-09-12T13:47:43.9750500Z env:
+Build using xcodebuild command	Set file_to_build	2026-09-12T13:47:43.9750660Z   scheme: LiveContainer
+Build using xcodebuild command	Set file_to_build	2026-09-12T13:47:43.9750830Z   archive_path: archive
+Build using xcodebuild command	Set file_to_build	2026-09-12T13:47:43.9751070Z   MD_APPLE_SDK_ROOT: /Applications/Xcode_26.2.app
+Build using xcodebuild command	Set file_to_build	2026-09-12T13:47:43.9751410Z ##[endgroup]
+Build using xcodebuild command	Archive	﻿2026-09-12T13:47:44.0228380Z ##[group]Run xcodebuild archive -archivePath "$archive_path" -scheme "$scheme" -"$filetype_parameter" "$file_to_build" -sdk iphoneos -arch arm64 -configuration Release | xcpretty && exit ${PIPESTATUS[0]}
+Build using xcodebuild command	Archive	2026-09-12T13:47:44.0229660Z ^[[36;1mxcodebuild archive -archivePath "$archive_path" -scheme "$scheme" -"$filetype_parameter" "$file_to_build" -sdk iphoneos -arch arm64 -configuration Release | xcpretty && exit ${PIPESTATUS[0]}^[[0m
+Build using xcodebuild command	Archive	2026-09-12T13:47:44.0263430Z shell: /bin/bash -e {0}
+Build using xcodebuild command	Archive	2026-09-12T13:47:44.0263650Z env:
+Build using xcodebuild command	Archive	2026-09-12T13:47:44.0263840Z   scheme: LiveContainer
+Build using xcodebuild command	Archive	2026-09-12T13:47:44.0274720Z   archive_path: archive
+Build using xcodebuild command	Archive	2026-09-12T13:47:44.0275010Z   MD_APPLE_SDK_ROOT: /Applications/Xcode_26.2.app
+Build using xcodebuild command	Archive	2026-09-12T13:47:44.0275270Z   filetype_parameter: project
+Build using xcodebuild command	Archive	2026-09-12T13:47:44.0275490Z   file_to_build: LiveContainer.xcodeproj
+Build using xcodebuild command	Archive	2026-09-12T13:47:44.0275690Z ##[endgroup]
+Build using xcodebuild command	Archive	2026-09-12T13:47:51.9385670Z --- xcodebuild: WARNING: Using the first of multiple matching destinations:
+Build using xcodebuild command	Archive	2026-09-12T13:47:51.9388490Z { platform:iOS, id:dvtdevice-DVTiPhonePlaceholder-iphoneos:placeholder, name:Any iOS Device }
+Build using xcodebuild command	Archive	2026-09-12T13:47:51.9392970Z { platform:iOS Simulator, id:dvtdevice-DVTiOSDeviceSimulatorPlaceholder-iphonesimulator:placeholder, name:Any iOS Simulator Device }
+Build using xcodebuild command	Archive	2026-09-12T13:47:51.9394250Z { platform:macOS, arch:arm64, variant:Designed for [iPad,iPhone], id:00415aa360497950a3e6ce31661a49c5cbbce77c, name:My Mac }
+Build using xcodebuild command	Archive	2026-09-12T13:48:04.7414910Z ▸ Processing empty-LiveContainerShared.plist
+Build using xcodebuild command	Archive	2026-09-12T13:48:08.8598040Z ▸ Compiling zsign.mm
+Build using xcodebuild command	Archive	2026-09-12T13:48:11.5709300Z ▸ Compiling util.cpp
+Build using xcodebuild command	Archive	2026-09-12T13:48:12.2106740Z ▸ Compiling timer.cpp
+Build using xcodebuild command	Archive	2026-09-12T13:48:13.0926690Z ▸ Compiling signing.cpp
+Build using xcodebuild command	Archive	2026-09-12T13:48:15.5958320Z ▸ Compiling sha.cpp
+Build using xcodebuild command	Archive	2026-09-12T13:48:16.1613060Z ▸ Compiling openssl.cpp
+Build using xcodebuild command	Archive	2026-09-12T13:48:17.9512210Z ▸ Compiling macho.cpp
+Build using xcodebuild command	Archive	2026-09-12T13:48:20.6974680Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:20.7101690Z ⚠️  /Users/runner/work/LiveContainerTV/LiveContainerTV/SideStoreSupport/SideStore.swift:150:25: capture of 'ext' with non-Sendable type 'NSExtension' in a '@Sendable' closure
+Build using xcodebuild command	Archive	2026-09-12T13:48:20.7105400Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:20.7227590Z                         ext._kill(9)
+Build using xcodebuild command	Archive	2026-09-12T13:48:20.7329370Z                         ^
+Build using xcodebuild command	Archive	2026-09-12T13:48:20.7443560Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:20.7549140Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:20.7654830Z ▸ Compiling log.cpp
+Build using xcodebuild command	Archive	2026-09-12T13:48:25.3886300Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:25.3990170Z ⚠️  /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Utilities/LCUtils.h:52:27: duplicate definition of category 'LiveContainer' on interface 'NSUserDefaults'
+Build using xcodebuild command	Archive	2026-09-12T13:48:25.4091560Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:25.4192630Z 50 | @end
+Build using xcodebuild command	Archive	2026-09-12T13:48:25.4293650Z            ^
+Build using xcodebuild command	Archive	2026-09-12T13:48:25.4394560Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:25.4498610Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:25.4599870Z ▸ Compiling json.cpp
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.3439520Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.3542550Z ⚠️  /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/App/AppDelegate.swift:74:72: 'keyWindow' was deprecated in iOS 13.0: Should not be used for applications that support multiple scenes as it returns a key window across all connected scenes
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.3641450Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.3742660Z         newOptions!._setRequestFullscreen(UIScreen.main.bounds == self.keyWindow!.bounds)
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.3847260Z                                                                        ^
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.3945600Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.4045820Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.4147170Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.4249990Z ⚠️  /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Models/LCAppModel.swift:354:38: capture of 'self' with non-Sendable type 'LCAppModel' in a '@Sendable' closure
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.4351570Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.4378360Z ** ARCHIVE FAILED **
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.4480310Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.4481230Z                         Task { [weak self] in
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.4636010Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.4637650Z                                      ^
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.4640400Z The following build commands failed:
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.4765980Z 	CompileSwift normal arm64 (in target 'LiveContainerSwiftUI' from project 'LiveContainer')
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.4772370Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.4956970Z 	SwiftCompile normal arm64 Compiling\ AppDelegate.swift,\ LiveContainerSwiftUIApp.swift,\ BuiltInSideStoreAppInfo.swift,\ LCAppModel.swift,\ LCContainer.swift,\ LCStorageManagementModel.swift,\ LCUtilsExtensions.swift,\ Shared.swift,\ ViewExtensions.swift,\ LCAppPreferenceView.swift,\ LCAppSettingsView.swift,\ LCContainerView.swift,\ LCSelectContainerView.swift,\ LCAppBanner.swift,\ LCAppBannerView.swift,\ LCAppBannerViewController.swift,\ LCAppSkeletonBanner.swift,\ LCAppSortManager.swift,\ LCCustomSortView.swift,\ LCAppListView.swift,\ LCDownloadView.swift,\ LCHelpView.swift,\ LCWebView.swift,\ LCDataManagementView.swift,\ LCStorageManagementSections.swift,\ LCStorageManagementView.swift,\ LCJITLessDiagnoseView.swift,\ LCMultiLCManagementView.swift,\ LCMultitaskSettingView.swift,\ LCSettingsView.swift,\ LCAltStoreSourcesView.swift,\ LCTabView.swift,\ LCTweaksView.swift,\ MultitaskAppWindow.swift,\ MultitaskDockView.swift,\ MultitaskManager.swift,\ ViewAppIntent.swift,\ App.swift /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/App/AppDelegate.swift /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/App/LiveContainerSwiftUIApp.swift /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Models/BuiltInSideStoreAppInfo.swift /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Models/LCAppModel.swift /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Models/LCContainer.swift /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Models/LCStorageManagementModel.swift /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Utilities/LCUtilsExtensions.swift /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Utilities/Shared.swift /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Utilities/ViewExtensions.swift /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Views/AppList/AppSettings/LCAppPreferenceView.swift /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Views/AppList/AppSettings/LCAppSettingsView.swift /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Views/AppList/AppSettings/LCContainerView.swift /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Views/AppList/AppSettings/LCSelectContainerView.swift /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Views/AppList/LCAppBanner/LCAppBanner.swift /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Views/AppList/LCAppBanner/LCAppBannerView.swift /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Views/AppList/LCAppBanner/LCAppBannerViewController.swift /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Views/AppList/LCAppBanner/LCAppSkeletonBanner.swift /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Views/AppList/Sorting/LCAppSortManager.swift /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Views/AppList/Sorting/LCCustomSortView.swift /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Views/AppList/LCAppListView.swift /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Views/AppList/LCDownloadView.swift /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Views/AppList/LCHelpView.swift /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Views/AppList/LCWebView.swift /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Views/Settings/DataManagement/LCDataManagementView.swift /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Views/Settings/DataManagement/LCStorageManagementSections.swift /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Views/Settings/DataManagement/LCStorageManagementView.swift /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Views/Settings/LCJITLessDiagnoseView.swift /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Views/Settings/LCMultiLCManagementView.swift /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Views/Settings/LCMultitaskSettingView.swift /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Views/Settings/LCSettingsView.swift /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Views/LCAltStoreSourcesView.swift /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Views/LCTabView.swift /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Views/LCTweaksView.swift /Users/runner/work/LiveContainerTV/LiveContainerTV/MultitaskSupport/MultitaskAppWindow.swift /Users/runner/work/LiveContainerTV/LiveContainerTV/MultitaskSupport/MultitaskDockView.swift /Users/runner/work/LiveContainerTV/LiveContainerTV/MultitaskSupport/MultitaskManager.swift /Users/runner/Library/Developer/Xcode/DerivedData/LiveContainer-fkbqtvmjjkbzcracoonoxwvmzroj/Build/Intermediates.noindex/ArchiveIntermediates/LiveContainer/IntermediateBuildFilesPath/LiveContainer.build/Release-iphoneos/LiveContainerSwiftUI.build/DerivedSources/IntentDefinitionGenerated/ViewApp/ViewAppIntent.swift /Users/runner/Library/Developer/Xcode/DerivedData/LiveContainer-fkbqtvmjjkbzcracoonoxwvmzroj/Build/Intermediates.noindex/ArchiveIntermediates/LiveContainer/IntermediateBuildFilesPath/LiveContainer.build/Release-iphoneos/LiveContainerSwiftUI.build/DerivedSources/IntentDefinitionGenerated/ViewApp/App.swift /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/CoreText.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/SafariServices.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/LocalAuthentication.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/_WebKit_SwiftUI.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/Spatial.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/_Builtin_float.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/_StringProcessing.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/AVKit.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/CoreGraphics.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/_Concurrency.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/UniformTypeIdentifiers.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/QuartzCore.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/Distributed.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/_DarwinFoundation3.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/Synchronization.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/SwiftUI.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/Darwin.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/DataDetection.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/AVFAudio.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/SwiftUICore.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/Dispatch.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/CoreMIDI.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/WebKit.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/_DarwinFoundation2.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/AudioToolbox.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/CoreVideo.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/Metal.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/CryptoKit.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/Combine.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/OSLog.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/FileProvider.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/os.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/_DarwinFoundation1.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/CoreImage.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/XPC.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/Observation.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/ObjectiveC.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/UIKit.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/DeveloperToolsSupport.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/Swift.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/Intents.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/CoreFoundation.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/CoreMedia.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/AuthenticationServices.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/CoreData.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/Symbols.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/simd.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/TipKit.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/CoreLocation.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/Foundation.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/System.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/Accessibility.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/CoreTransferable.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/CoreAudio.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/AVFoundation.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.2/Network.swiftmodule/arm64e-apple-ios.swiftmodule /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/DataDetection-804FJVC4PXHJGH7L6SANK47TM.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/simd-ZRDD8WMF0BEDQ6BO0EOVSX23.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Foundation-33IK7S34PZQOH699ELROM1U96.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/MediaToolbox-EDSFY1LGH5FG83C4WI405BKX9.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/FileProvider-511CV6ADWH6DZW5M4KGOGN65M.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/_Builtin_inttypes-BIAVF754JT6M6RFML3UNCOTQU.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/ptrcheck-4O2ZC1GL2XB6LYGRKF3CX2Q1B.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/sys_types-3GWP2TT5YTKP1W70PQVZSNB6T.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/os_workgroup-4K8DVDFBUHAPH4UQ7CUTRDKI1.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/_Builtin_float-2F60PK2VGUF8HH2FCO0LFCHLF.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/_Builtin_limits-4R69L6GQFBDP76S6A4LAW3ORT.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/_Builtin_stdint-C0DRVX5AKPUR0DFLSEA2CW7JJ.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/_Builtin_stdarg-21781L7SXVWHRGQW19R8K2DX.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/_AvailabilityInternal-4U9VYBTT21KP1AQLCYWOMKJ0G.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/CFNetwork-E6CKUJRB4Q0YHXFA5RDIMZAWP.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/LocalAuthentication-7MKQI7BH0XM4ZL24ZRYX5UG7A.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/QuartzCore-CFNWOODIUD1U0NDSNRPLSTMPU.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Intents-EXRR9Z7C5VWTQO46OHIMX3YIY.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/CoreData-6I8C0HRCM01EQHNIVWW74F095.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/_DarwinFoundation2-38DWUORSP6SBEPF9FSSFV3V0J.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Symbols-6Q0TGUWGW48A8ZCC6U66A2EBA.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/_Builtin_stdbool-6FTXV7PP667XYBWV6DHJ467XQ.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/CoreImage-85SUTGX9SH1YHSUYN2KBSMFXX.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/UIUtilities-9CJLIGIP7CG404BZHUICFH16T.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/os-4HA6T4ECFJK0RMSZLHUK0Q2LL.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/AuthenticationServices-676Y95XC1PEEBKFHY3L4L1SRC.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/SwiftUI-9491Y5FG6VZMDT53VK9CW3140.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/CoreMIDI-2A4P9WHQ9TFYVAEQEH6O12HJ4.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/ImageIO-D5DBYIIKTRZFRN7J7EMKWI4HB.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/CoreText-2OQ3TVY9W1O5PFMT50YYXD1BU.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/UserNotifications-6Y39NIHE93R7SQ542JO6D0HCJ.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/CoreFoundation-1LLH9EXP1Q2IWB6N8GPS8HMWR.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/WebKit-4NKRJFXGK41Z8HWAZ32SYS95P.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/CoreVideo-D97TJR3VEXSY17NAC7CRW2E8Q.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/_Builtin_stddef-5ON51FL77M9XB0YYXTWV9X292.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/UniformTypeIdentifiers-7UTK1SQN4KD60EHCJ5XEJXWTN.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/_DarwinFoundation1-3OH2XU4RCS437DAHXPBID430S.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/AVFAudio-4H6BJ35NG8T67TJPWYLLD3H80.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/CoreGraphics-D45SAQ0M40EH2T8226YPX78BJ.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/CoreLocation-4LW0CWVHIDEU3ABTR2HV2GOVN.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/AVKit-9WFOPYX3VB7X9H6HX2ZXQ8W80.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Security-A91FNXK44MC952MKGU4OKRUON.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/CoreTransferable-6SNE6CFVMN4NX9OTMYCFIVX4D.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/_DarwinFoundation3-4OJ8XPY1545HXQRIL0O426U65.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/OSLog-6TVB4VQL2L9HIRWRCEMTTND3M.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/IOSurface-B3RASZBZVZG6NUN3IX8P4ZL43.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/_LocationEssentials-9Z8Y46B9PRWKSEMINQSDV80VG.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/CoreAudioTypes-6K8AI2LNO7HP7THP0566QAUH7.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/AVFoundation-6JF8C67202HZMA970775NWSOR.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/SwiftUICore-5QZ4JWU6BVWXUWUL13CYN90KT.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/os_object-9D1WLIIL0ZL24GNFH354HNAGL.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/_Builtin_stdatomic-2M5BZ2DO1GJXC6YGVI7PEV9KY.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/ptrauth-D53JR76BY396L8FGLFGFGLPI3.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Darwin-4FY5DNBZKPIVO2SW83IY5J4BO.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Dispatch-DBIR9HPAMIFIO6FRZT3LHAZEG.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/AVRouting-6DVM80B21Q85CEF4KWP5KH250.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/UIKit-54LO6TNCLOYT9PGC253RYHTU6.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/XPC-1X2HFKCNSAPDUQGH0OZ5VW7ZK.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/dnssd-EIF4XSJKF958ZJCG2QQ55MAQK.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Spatial-4GBFIKT9SOZCTMXJEWOMKSTDQ.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/DeveloperToolsSupport-EHAL1LNM7VLK6B29KC4AKL47E.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/_SwiftConcurrencyShims-1X2XWIH3WVE1847ZK0WO3MLNC.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/CoreAudio-57Y9J4WNDCL60DRMOE7Q79W95.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Network-7O4CB63BXC9GV2NAL1V4F26NR.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/SafariServices-4735K2L0FK5WG0DZTIQNFY1HL.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/SwiftShims-8HEEG240AQ7UKDLHP58NWNBDM.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/MachO-XGPP371R48MEAALGHWD8TTJQ.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/AudioToolbox-9ETBYSHPW4LUMUF80MXX6HCBB.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Metal-7NBLV2AVJQZ9ZQCMW5KJAP2UU.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/OpenGLES-AVVD864KQDHFXARJMKHJW7MKI.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Accessibility-24IFFUHSSBR354XJ72KKCEQK2.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/ObjectiveC-9ODB1N7Y280ULWQ0O5D2FJWHV.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/_Builtin_intrinsics-F1GTJ8FEJMQMICDDM09OLCSWK.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/_Builtin_tgmath-9MJ2WTYVVNXHDE590142Q4CNP.pcm /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/CoreMedia-324MRODFIMY26J85OYX4ILTU5.pcm /Users/runner/Library/Developer/Xcode/DerivedData/LiveContainer-fkbqtvmjjkbzcracoonoxwvmzroj/Build/Intermediates.noindex/ArchiveIntermediates/LiveContainer/IntermediateBuildFilesPath/LiveContainer.build/Release-iphoneos/LiveContainerSwiftUI.build/Objects-normal/arm64/LiveContainerSwiftUI-dependencies-1.json /Users/runner/Library/Developer/Xcode/DerivedData/LiveContainer-fkbqtvmjjkbzcracoonoxwvmzroj/Build/Intermediates.noindex/ArchiveIntermediates/LiveContainer/IntermediateBuildFilesPath/LiveContainer.build/Release-iphoneos/LiveContainerSwiftUI.build/Objects-normal/arm64/LiveContainerSwiftUI-primary-Bridging-header.pch (in target 'LiveContainerSwiftUI' from project 'LiveContainer')
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5194390Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5195110Z 	Archiving project LiveContainer with scheme LiveContainer
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5196280Z (3 failures)
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5197210Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5198120Z ⚠️  /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Models/LCAppModel.swift:537:20: immutable value 'urlScheme' was never used; consider replacing with '_' or removing it
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5198830Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5198980Z             if let urlScheme, !found  {
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5199270Z       ^
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5199470Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5199480Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5199490Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5200340Z ⚠️  /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Models/LCStorageManagementModel.swift:86:13: initialization of immutable value 'bundleRoots' was never used; consider replacing with assignment to '_' or removing it
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5201210Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5201460Z         let bundleRoots = uniquePaths([LCPath.bundlePath, LCPath.lcGroupBundlePath])
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5201900Z                ~~~~^~~~~~~~~
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5202080Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5202090Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5202090Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5202910Z ⚠️  /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Models/LCStorageManagementModel.swift:87:13: initialization of immutable value 'containerRoots' was never used; consider replacing with assignment to '_' or removing it
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5203720Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5203980Z         let containerRoots = uniquePaths([LCPath.dataPath, LCPath.lcGroupDataPath])
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5204890Z         ~~~~^~~~~~~~~~~
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5205090Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5205090Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5205090Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5205790Z ⚠️  /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Models/LCStorageManagementModel.swift:95:13: variable 'sideStoreContainerSize' was written to, but never read
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5206470Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5206560Z         var sideStoreContainerSize: Int64 = 0
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5206930Z         ~~~~^~~~~~~~~~~~~~
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5207110Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5207110Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5207110Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5209800Z ⚠️  /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Models/LCStorageManagementModel.swift:290:40: instance method 'makeIterator' is unavailable from asynchronous contexts; this is an error in the Swift 6 language mode
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5217530Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5218090Z         for case let fileURL as URL in enumerator {
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5223970Z             ^
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5224550Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5224570Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5224570Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5225600Z ⚠️  /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Views/AppList/LCAppListView.swift:1119:36: variable 'url' was never mutated; consider changing to 'let' constant
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5250490Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5251780Z                             if var url = URL(string: "stosdebug://enableJIT?bundleId=\(Bundle.main.bundleIdentifier!)&appName=\(appName)&pid=\(pid)&relaunchApp=false& forcePID=true\(encoded)") {
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5256350Z                                        ^
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5256630Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5256640Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5256650Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5257930Z ⚠️  /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Views/AppList/LCAppListView.swift:1128:32: variable 'url' was never mutated; consider changing to 'let' constant
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5259090Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5259990Z                         if var url = URL(string: "stosdebug://enableJIT?bundleId=\(Bundle.main.bundleIdentifier!)&appName=\(appName)&pid=\(pid)&forcePID=true\(encoded)") {
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5279710Z                                ~~~ ^
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5279950Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5279950Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5279960Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5280850Z ❌  /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Views/LCTabView.swift:39:9: 'NavigationStack' is only available in iOS 16.0 or newer
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5283830Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5285290Z         NavigationStack {
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5294670Z                            ~~~ ^
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5295150Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5295150Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5295160Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5296020Z ❌  /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Views/LCTabView.swift:99:95: cannot use explicit 'return' statement in the body of result builder 'ViewBuilder'
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5296890Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5304400Z                 if tab == .sources && DataManager.shared.model.multiLCStatus == 2 { Spacer(); return }
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5305060Z        ^
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5305230Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5305230Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5305230Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5305900Z ❌  /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Views/LCTabView.swift:98:13: generic parameter 'Content' could not be inferred
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5306370Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5306570Z             ForEach(SwitchTab.allCases, id: \.self) { tab in
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5307080Z                                                                                               ^~~~~~~
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5307370Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5307380Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5307380Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5307850Z ❌  /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Views/LCTabView.swift:138:118: type 'ShapeStyle' has no member 'accentColor'
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5308390Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5309530Z                 Image(systemName: "square.stack.3d.up.fill").font(.system(size: 28, weight: .bold)).foregroundStyle(.accentColor)
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5310210Z             ^
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5310300Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5310300Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5310300Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5310870Z ❌  /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Views/LCTabView.swift:157:48: value of type 'LCAppInfo' has no member 'icon'
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5311410Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5311680Z                     Image(uiImage: app.appInfo.icon ?? UIImage(systemName: "app.fill")!)
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5312230Z                                                                                                                     ~^~~~~~~~~~~
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5312580Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5312590Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5312590Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5313130Z ❌  /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainerSwiftUI/Views/LCTabView.swift:207:48: value of type 'LCAppInfo' has no member 'icon'
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5313710Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5314050Z                     Image(uiImage: app.appInfo.icon ?? UIImage(systemName: "app.fill")!)
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5314460Z                                    ~~~~~~~~~~~ ^~~~
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5314780Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5314780Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5314790Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5315580Z ⚠️  /Users/runner/work/LiveContainerTV/LiveContainerTV/MultitaskSupport/MultitaskAppWindow.swift:79:71: 'statusBarOrientation' was deprecated in iOS 13.0: Use the interfaceOrientation property of the window scene instead.
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5316430Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5316650Z                 settings.setInterfaceOrientation(UIApplication.shared.statusBarOrientation)
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5317460Z                                    ~~~~~~~~~~~ ^~~~
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5317740Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5317750Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5317940Z ▸ Compiling fs.cpp
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5318190Z ▸ Compiling base64.cpp
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5318530Z ▸ Compiling archo.cpp
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5318780Z ▸ Compiling Utils.mm
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5319450Z ▸ Linking ZSign.dylib
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5319900Z ▸ Generating 'ZSign.dylib.dSYM'
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5320300Z ▸ Compiling utils.m
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5320580Z ▸ Compiling TestJITLess.m
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5320800Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5321470Z ⚠️  /Users/runner/work/LiveContainerTV/LiveContainerTV/TestJITLess/TestJITLess.m:4:35: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5322160Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5322330Z     4 | static void TestJITLessConstructor() {
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5322690Z                                                                       ^
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5322960Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5322960Z 
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5323140Z ▸ Linking TestJITLess.dylib
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5323460Z ▸ Compiling Notification.m
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5323810Z ▸ Generating 'TestJITLess.dylib.dSYM'
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5324740Z     ShareExtension isn't code signed but requires entitlements. Falling back to ad hoc signing. (in target 'ShareExtension' from project 'LiveContainer')
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5326060Z     LiveProcess isn't code signed but requires entitlements. Falling back to ad hoc signing. (in target 'LiveProcess' from project 'LiveContainer')
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5327260Z     LaunchAppExtension isn't code signed but requires entitlements. Falling back to ad hoc signing. (in target 'LaunchAppExtension' from project 'LiveContainer')
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5328390Z     LiveContainer isn't code signed but requires entitlements. Falling back to ad hoc signing. (in target 'LiveContainer' from project 'LiveContainer')
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5329990Z     Run script build phase 'Run Script' will be run during every build because it does not specify any outputs. To address this issue, either add output dependencies to the script phase, or configure it to run in every build by unchecking "Based on dependency analysis" in the script phase. (in target 'LiveContainer' from project 'LiveContainer')
+Build using xcodebuild command	Archive	2026-09-12T13:48:31.5669350Z ##[error]Process completed with exit code 65.
+Build using xcodebuild command	Post Checkout	﻿2026-09-12T13:48:31.6158040Z Post job cleanup.
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:32.1591170Z [command]/opt/homebrew/bin/git version
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:32.1898420Z git version 2.55.0
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:32.2480230Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/e410b63d-6d4d-41f3-8e03-0c76fde93a6e/.gitconfig'
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:32.2582020Z Temporarily overriding HOME='/Users/runner/work/_temp/e410b63d-6d4d-41f3-8e03-0c76fde93a6e' before making global git config changes
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:32.2683610Z Adding repository directory to the temporary git global config as a safe directory
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:32.2785220Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/LiveContainerTV/LiveContainerTV
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:32.3204450Z Removing SSH command configuration
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:32.3342680Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:32.3663830Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:32.4694890Z Entering 'OpenSSL'
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:32.5316290Z Entering 'litehook'
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:32.6038350Z Removing HTTP extra header
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:32.6155520Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:32.6462770Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:32.7777750Z Entering 'OpenSSL'
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:32.8180210Z Entering 'litehook'
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:32.8787710Z Removing includeIf entries pointing to credentials config files
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:32.8891920Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:32.8993710Z includeif.gitdir:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git.path
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:32.9094500Z includeif.gitdir:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git/worktrees/*.path
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:32.9194600Z includeif.gitdir:/github/workspace/.git.path
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:32.9297110Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:32.9639340Z [command]/opt/homebrew/bin/git config --local --get-all includeif.gitdir:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git.path
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:32.9743520Z /Users/runner/work/_temp/git-credentials-9c3ce979-add1-436e-93d7-55a62ec32fda.config
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:33.0088770Z [command]/opt/homebrew/bin/git config --local --unset includeif.gitdir:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git.path /Users/runner/work/_temp/git-credentials-9c3ce979-add1-436e-93d7-55a62ec32fda.config
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:33.0292790Z [command]/opt/homebrew/bin/git config --local --get-all includeif.gitdir:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git/worktrees/*.path
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:33.0394880Z /Users/runner/work/_temp/git-credentials-9c3ce979-add1-436e-93d7-55a62ec32fda.config
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:33.0706460Z [command]/opt/homebrew/bin/git config --local --unset includeif.gitdir:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git/worktrees/*.path /Users/runner/work/_temp/git-credentials-9c3ce979-add1-436e-93d7-55a62ec32fda.config
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:33.1027880Z [command]/opt/homebrew/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:33.1130100Z /github/runner_temp/git-credentials-9c3ce979-add1-436e-93d7-55a62ec32fda.config
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:33.1437480Z [command]/opt/homebrew/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-9c3ce979-add1-436e-93d7-55a62ec32fda.config
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:33.1747180Z [command]/opt/homebrew/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:33.1850680Z /github/runner_temp/git-credentials-9c3ce979-add1-436e-93d7-55a62ec32fda.config
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:33.2164260Z [command]/opt/homebrew/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-9c3ce979-add1-436e-93d7-55a62ec32fda.config
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:33.2471420Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:33.2577840Z Entering 'OpenSSL'
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:33.2679540Z file:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/OpenSSL/config	remote.origin.url
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:33.2780840Z Entering 'litehook'
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:33.2882120Z file:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/litehook/config	remote.origin.url
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:33.3187020Z [command]/opt/homebrew/bin/git config --file /Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/OpenSSL/config --name-only --get-regexp ^includeIf\.gitdir:
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:33.3288680Z includeif.gitdir:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/OpenSSL.path
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:33.3350170Z includeif.gitdir:/github/workspace/.git/modules/OpenSSL.path
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:33.3654060Z [command]/opt/homebrew/bin/git config --file /Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/OpenSSL/config --get-all includeif.gitdir:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/OpenSSL.path
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:33.3755840Z /Users/runner/work/_temp/git-credentials-9c3ce979-add1-436e-93d7-55a62ec32fda.config
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:33.4060690Z [command]/opt/homebrew/bin/git config --file /Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/OpenSSL/config --unset includeif.gitdir:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/OpenSSL.path /Users/runner/work/_temp/git-credentials-9c3ce979-add1-436e-93d7-55a62ec32fda.config
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:33.4365680Z [command]/opt/homebrew/bin/git config --file /Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/OpenSSL/config --get-all includeif.gitdir:/github/workspace/.git/modules/OpenSSL.path
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:33.4467430Z /github/runner_temp/git-credentials-9c3ce979-add1-436e-93d7-55a62ec32fda.config
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:33.4774800Z [command]/opt/homebrew/bin/git config --file /Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/OpenSSL/config --unset includeif.gitdir:/github/workspace/.git/modules/OpenSSL.path /github/runner_temp/git-credentials-9c3ce979-add1-436e-93d7-55a62ec32fda.config
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:33.5079340Z [command]/opt/homebrew/bin/git config --file /Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/litehook/config --name-only --get-regexp ^includeIf\.gitdir:
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:33.5181160Z includeif.gitdir:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/litehook.path
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:33.5283080Z includeif.gitdir:/github/workspace/.git/modules/litehook.path
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:33.5588150Z [command]/opt/homebrew/bin/git config --file /Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/litehook/config --get-all includeif.gitdir:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/litehook.path
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:33.5703960Z /Users/runner/work/_temp/git-credentials-9c3ce979-add1-436e-93d7-55a62ec32fda.config
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:33.6006710Z [command]/opt/homebrew/bin/git config --file /Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/litehook/config --unset includeif.gitdir:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/litehook.path /Users/runner/work/_temp/git-credentials-9c3ce979-add1-436e-93d7-55a62ec32fda.config
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:33.6309680Z [command]/opt/homebrew/bin/git config --file /Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/litehook/config --get-all includeif.gitdir:/github/workspace/.git/modules/litehook.path
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:33.6411360Z /github/runner_temp/git-credentials-9c3ce979-add1-436e-93d7-55a62ec32fda.config
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:33.6719090Z [command]/opt/homebrew/bin/git config --file /Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/litehook/config --unset includeif.gitdir:/github/workspace/.git/modules/litehook.path /github/runner_temp/git-credentials-9c3ce979-add1-436e-93d7-55a62ec32fda.config
+Build using xcodebuild command	Post Checkout	2026-09-12T13:48:33.7028930Z Removing credentials config '/Users/runner/work/_temp/git-credentials-9c3ce979-add1-436e-93d7-55a62ec32fda.config'
+Build using xcodebuild command	Complete job	﻿2026-09-12T13:48:33.7505170Z Evaluate and set job outputs
+Build using xcodebuild command	Complete job	2026-09-12T13:48:33.7555160Z Set output 'scheme'
+Build using xcodebuild command	Complete job	2026-09-12T13:48:33.7556470Z Set output 'archive_path'
+Build using xcodebuild command	Complete job	2026-09-12T13:48:33.7558920Z Set output 'artifact'
+Build using xcodebuild command	Complete job	2026-09-12T13:48:33.7559180Z Set output 'artifact2'
+Build using xcodebuild command	Complete job	2026-09-12T13:48:33.7559950Z Cleaning up orphan processes
+Build using xcodebuild command	Complete job	2026-09-12T13:48:35.3982040Z Terminate orphan process: pid (3494) (ibtoold)

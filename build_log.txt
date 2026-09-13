@@ -1,0 +1,355 @@
+Build IPA	Set up job	﻿2026-09-13T15:17:59.7313150Z Current runner version: '2.337.0'
+Build IPA	Set up job	2026-09-13T15:17:59.7332960Z ##[group]Runner Image Provisioner
+Build IPA	Set up job	2026-09-13T15:17:59.7333600Z Hosted Compute Agent
+Build IPA	Set up job	2026-09-13T15:17:59.7334000Z Version: 20260828.587
+Build IPA	Set up job	2026-09-13T15:17:59.7334460Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+Build IPA	Set up job	2026-09-13T15:17:59.7334990Z Build Date: 2026-08-28T16:44:25Z
+Build IPA	Set up job	2026-09-13T15:17:59.7335450Z Worker ID: {a9199bc9-91f9-4997-9af9-f43c52d02a75}
+Build IPA	Set up job	2026-09-13T15:17:59.7335940Z Azure Region: westus
+Build IPA	Set up job	2026-09-13T15:17:59.7336320Z ##[endgroup]
+Build IPA	Set up job	2026-09-13T15:17:59.7337400Z ##[group]Operating System
+Build IPA	Set up job	2026-09-13T15:17:59.7337810Z macOS
+Build IPA	Set up job	2026-09-13T15:17:59.7338160Z 26.6.2
+Build IPA	Set up job	2026-09-13T15:17:59.7338490Z 25G83
+Build IPA	Set up job	2026-09-13T15:17:59.7338850Z ##[endgroup]
+Build IPA	Set up job	2026-09-13T15:17:59.7339210Z ##[group]Runner Image
+Build IPA	Set up job	2026-09-13T15:17:59.7339620Z Image: macos-26-arm64
+Build IPA	Set up job	2026-09-13T15:17:59.7339990Z Version: 20260907.0351.1
+Build IPA	Set up job	2026-09-13T15:17:59.7340750Z Included Software: https://github.com/actions/runner-images/blob/macos-26-arm64/20260907.0351/images/macos/macos-26-arm64-Readme.md
+Build IPA	Set up job	2026-09-13T15:17:59.7342040Z Image Release: https://github.com/actions/runner-images/releases/tag/macos-26-arm64%2F20260907.0351
+Build IPA	Set up job	2026-09-13T15:17:59.7342770Z ##[endgroup]
+Build IPA	Set up job	2026-09-13T15:17:59.7343620Z ##[group]GITHUB_TOKEN Permissions
+Build IPA	Set up job	2026-09-13T15:17:59.7345160Z Contents: read
+Build IPA	Set up job	2026-09-13T15:17:59.7345610Z Metadata: read
+Build IPA	Set up job	2026-09-13T15:17:59.7345990Z Packages: read
+Build IPA	Set up job	2026-09-13T15:17:59.7346360Z ##[endgroup]
+Build IPA	Set up job	2026-09-13T15:17:59.7348090Z Secret source: Actions
+Build IPA	Set up job	2026-09-13T15:17:59.7348640Z Cache mode: write
+Build IPA	Set up job	2026-09-13T15:17:59.7349100Z Prepare workflow directory
+Build IPA	Set up job	2026-09-13T15:17:59.7774220Z Prepare all required actions
+Build IPA	Set up job	2026-09-13T15:17:59.7846140Z Getting action download info
+Build IPA	Set up job	2026-09-13T15:17:59.9376810Z Download action repository 'maxim-lobanov/setup-xcode@v1' (SHA:ed7a3b1fda3918c0306d1b724322adc0b8cc0a90)
+Build IPA	Set up job	2026-09-13T15:18:00.7934000Z Download action repository 'actions/checkout@v6' (SHA:d23441a48e516b6c34aea4fa41551a30e30af803)
+Build IPA	Set up job	2026-09-13T15:18:00.8565980Z Download action repository 'actions/upload-artifact@v7' (SHA:043fb46d1a93c77aae656e7c1c64a875d1fc6a0a)
+Build IPA	Set up job	2026-09-13T15:18:00.9752650Z Complete job name: Build IPA
+Build IPA	Run maxim-lobanov/setup-xcode@v1	﻿2026-09-13T15:18:01.0183900Z ##[group]Run maxim-lobanov/setup-xcode@v1
+Build IPA	Run maxim-lobanov/setup-xcode@v1	2026-09-13T15:18:01.0184580Z with:
+Build IPA	Run maxim-lobanov/setup-xcode@v1	2026-09-13T15:18:01.0184910Z   xcode-version: 26.2
+Build IPA	Run maxim-lobanov/setup-xcode@v1	2026-09-13T15:18:01.0185330Z env:
+Build IPA	Run maxim-lobanov/setup-xcode@v1	2026-09-13T15:18:01.0185630Z   scheme: LiveContainer
+Build IPA	Run maxim-lobanov/setup-xcode@v1	2026-09-13T15:18:01.0185980Z   archive_path: archive
+Build IPA	Run maxim-lobanov/setup-xcode@v1	2026-09-13T15:18:01.0186310Z ##[endgroup]
+Build IPA	Run maxim-lobanov/setup-xcode@v1	2026-09-13T15:18:01.7453740Z Switching Xcode to version '26.2'...
+Build IPA	Run maxim-lobanov/setup-xcode@v1	2026-09-13T15:18:01.8570600Z Xcode is set to 26.2.0 (17C52)
+Build IPA	Checkout	﻿2026-09-13T15:18:01.8988490Z ##[group]Run actions/checkout@v6
+Build IPA	Checkout	2026-09-13T15:18:01.8989220Z with:
+Build IPA	Checkout	2026-09-13T15:18:01.8989630Z   submodules: recursive
+Build IPA	Checkout	2026-09-13T15:18:01.8990130Z   repository: duranereloise-hash/LiveContainerTV
+Build IPA	Checkout	2026-09-13T15:18:01.8993380Z   token: ***
+Build IPA	Checkout	2026-09-13T15:18:01.8993810Z   ssh-strict: true
+Build IPA	Checkout	2026-09-13T15:18:01.8994270Z   ssh-user: git
+Build IPA	Checkout	2026-09-13T15:18:01.8994680Z   persist-credentials: true
+Build IPA	Checkout	2026-09-13T15:18:01.8995130Z   clean: true
+Build IPA	Checkout	2026-09-13T15:18:01.8995620Z   sparse-checkout-cone-mode: true
+Build IPA	Checkout	2026-09-13T15:18:01.8996180Z   fetch-depth: 1
+Build IPA	Checkout	2026-09-13T15:18:01.8996570Z   fetch-tags: false
+Build IPA	Checkout	2026-09-13T15:18:01.8996980Z   show-progress: true
+Build IPA	Checkout	2026-09-13T15:18:01.8997450Z   lfs: false
+Build IPA	Checkout	2026-09-13T15:18:01.8997840Z   set-safe-directory: true
+Build IPA	Checkout	2026-09-13T15:18:01.8998300Z   allow-unsafe-pr-checkout: false
+Build IPA	Checkout	2026-09-13T15:18:01.8998760Z env:
+Build IPA	Checkout	2026-09-13T15:18:01.8999160Z   scheme: LiveContainer
+Build IPA	Checkout	2026-09-13T15:18:01.8999580Z   archive_path: archive
+Build IPA	Checkout	2026-09-13T15:18:01.9000200Z   MD_APPLE_SDK_ROOT: /Applications/Xcode_26.2.app
+Build IPA	Checkout	2026-09-13T15:18:01.9000820Z ##[endgroup]
+Build IPA	Checkout	2026-09-13T15:18:02.1209540Z Syncing repository: duranereloise-hash/LiveContainerTV
+Build IPA	Checkout	2026-09-13T15:18:02.1213250Z ##[group]Getting Git version info
+Build IPA	Checkout	2026-09-13T15:18:02.1213930Z Working directory is '/Users/runner/work/LiveContainerTV/LiveContainerTV'
+Build IPA	Checkout	2026-09-13T15:18:02.1215030Z [command]/opt/homebrew/bin/git version
+Build IPA	Checkout	2026-09-13T15:18:02.1860870Z git version 2.55.0
+Build IPA	Checkout	2026-09-13T15:18:02.1889290Z ##[endgroup]
+Build IPA	Checkout	2026-09-13T15:18:02.1904210Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/2696ae7a-c533-4a24-8d13-1dea8cf22abf/.gitconfig'
+Build IPA	Checkout	2026-09-13T15:18:02.1920400Z Temporarily overriding HOME='/Users/runner/work/_temp/2696ae7a-c533-4a24-8d13-1dea8cf22abf' before making global git config changes
+Build IPA	Checkout	2026-09-13T15:18:02.1923750Z Adding repository directory to the temporary git global config as a safe directory
+Build IPA	Checkout	2026-09-13T15:18:02.1927660Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/LiveContainerTV/LiveContainerTV
+Build IPA	Checkout	2026-09-13T15:18:02.2127250Z Deleting the contents of '/Users/runner/work/LiveContainerTV/LiveContainerTV'
+Build IPA	Checkout	2026-09-13T15:18:02.2135040Z ##[group]Determining repository object format
+Build IPA	Checkout	2026-09-13T15:18:02.2139110Z ##[endgroup]
+Build IPA	Checkout	2026-09-13T15:18:02.2141330Z ##[group]Initializing the repository
+Build IPA	Checkout	2026-09-13T15:18:02.2143530Z [command]/opt/homebrew/bin/git init /Users/runner/work/LiveContainerTV/LiveContainerTV
+Build IPA	Checkout	2026-09-13T15:18:02.2405390Z hint: Using 'master' as the name for the initial branch. This default branch name
+Build IPA	Checkout	2026-09-13T15:18:02.2409000Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Build IPA	Checkout	2026-09-13T15:18:02.2411410Z hint: to use in all of your new repositories, which will suppress this warning,
+Build IPA	Checkout	2026-09-13T15:18:02.2413250Z hint: call:
+Build IPA	Checkout	2026-09-13T15:18:02.2414340Z hint:
+Build IPA	Checkout	2026-09-13T15:18:02.2415650Z hint: 	git config --global init.defaultBranch <name>
+Build IPA	Checkout	2026-09-13T15:18:02.2417220Z hint:
+Build IPA	Checkout	2026-09-13T15:18:02.2418810Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Build IPA	Checkout	2026-09-13T15:18:02.2421180Z hint: 'development'. The just-created branch can be renamed via this command:
+Build IPA	Checkout	2026-09-13T15:18:02.2423010Z hint:
+Build IPA	Checkout	2026-09-13T15:18:02.2424210Z hint: 	git branch -m <name>
+Build IPA	Checkout	2026-09-13T15:18:02.2425600Z hint:
+Build IPA	Checkout	2026-09-13T15:18:02.2427140Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Build IPA	Checkout	2026-09-13T15:18:02.2429980Z Initialized empty Git repository in /Users/runner/work/LiveContainerTV/LiveContainerTV/.git/
+Build IPA	Checkout	2026-09-13T15:18:02.2432420Z [command]/opt/homebrew/bin/git remote add origin https://github.com/duranereloise-hash/LiveContainerTV
+Build IPA	Checkout	2026-09-13T15:18:02.2547290Z ##[endgroup]
+Build IPA	Checkout	2026-09-13T15:18:02.2548930Z ##[group]Disabling automatic garbage collection
+Build IPA	Checkout	2026-09-13T15:18:02.2554280Z [command]/opt/homebrew/bin/git config --local gc.auto 0
+Build IPA	Checkout	2026-09-13T15:18:02.2637860Z ##[endgroup]
+Build IPA	Checkout	2026-09-13T15:18:02.2638860Z ##[group]Setting up auth
+Build IPA	Checkout	2026-09-13T15:18:02.2639390Z Removing SSH command configuration
+Build IPA	Checkout	2026-09-13T15:18:02.2642890Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+Build IPA	Checkout	2026-09-13T15:18:02.2724730Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Build IPA	Checkout	2026-09-13T15:18:02.4013500Z Removing HTTP extra header
+Build IPA	Checkout	2026-09-13T15:18:02.4022050Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Build IPA	Checkout	2026-09-13T15:18:02.4113480Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Build IPA	Checkout	2026-09-13T15:18:02.5838370Z Removing includeIf entries pointing to credentials config files
+Build IPA	Checkout	2026-09-13T15:18:02.5940890Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Build IPA	Checkout	2026-09-13T15:18:02.6249580Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Build IPA	Checkout	2026-09-13T15:18:02.6999060Z [command]/opt/homebrew/bin/git config --file /Users/runner/work/_temp/git-credentials-2c21ad95-f093-4c0b-a6c3-34fae15e71f8.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Build IPA	Checkout	2026-09-13T15:18:02.7066060Z [command]/opt/homebrew/bin/git config --local includeIf.gitdir:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git.path /Users/runner/work/_temp/git-credentials-2c21ad95-f093-4c0b-a6c3-34fae15e71f8.config
+Build IPA	Checkout	2026-09-13T15:18:02.7129040Z [command]/opt/homebrew/bin/git config --local includeIf.gitdir:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git/worktrees/*.path /Users/runner/work/_temp/git-credentials-2c21ad95-f093-4c0b-a6c3-34fae15e71f8.config
+Build IPA	Checkout	2026-09-13T15:18:02.7195950Z [command]/opt/homebrew/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-2c21ad95-f093-4c0b-a6c3-34fae15e71f8.config
+Build IPA	Checkout	2026-09-13T15:18:02.7284050Z [command]/opt/homebrew/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-2c21ad95-f093-4c0b-a6c3-34fae15e71f8.config
+Build IPA	Checkout	2026-09-13T15:18:02.7337470Z ##[endgroup]
+Build IPA	Checkout	2026-09-13T15:18:02.7338350Z ##[group]Fetching the repository
+Build IPA	Checkout	2026-09-13T15:18:02.7346160Z [command]/opt/homebrew/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +9919a2a51f4999f70381cb79191182af3cdd4306:refs/remotes/origin/main
+Build IPA	Checkout	2026-09-13T15:18:04.0271570Z From https://github.com/duranereloise-hash/LiveContainerTV
+Build IPA	Checkout	2026-09-13T15:18:04.0373460Z  * [new ref]         9919a2a51f4999f70381cb79191182af3cdd4306 -> origin/main
+Build IPA	Checkout	2026-09-13T15:18:04.0703930Z [command]/opt/homebrew/bin/git branch --list --remote origin/main
+Build IPA	Checkout	2026-09-13T15:18:04.0804890Z   origin/main
+Build IPA	Checkout	2026-09-13T15:18:04.0915600Z [command]/opt/homebrew/bin/git rev-parse refs/remotes/origin/main
+Build IPA	Checkout	2026-09-13T15:18:04.0916480Z 9919a2a51f4999f70381cb79191182af3cdd4306
+Build IPA	Checkout	2026-09-13T15:18:04.0917820Z ##[endgroup]
+Build IPA	Checkout	2026-09-13T15:18:04.0918600Z ##[group]Determining the checkout info
+Build IPA	Checkout	2026-09-13T15:18:04.0919400Z ##[endgroup]
+Build IPA	Checkout	2026-09-13T15:18:04.0920740Z [command]/opt/homebrew/bin/git sparse-checkout disable
+Build IPA	Checkout	2026-09-13T15:18:04.0922080Z [command]/opt/homebrew/bin/git config --local --unset-all extensions.worktreeConfig
+Build IPA	Checkout	2026-09-13T15:18:04.0971570Z ##[group]Checking out the ref
+Build IPA	Checkout	2026-09-13T15:18:04.0974630Z [command]/opt/homebrew/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Build IPA	Checkout	2026-09-13T15:18:04.1462520Z Switched to a new branch 'main'
+Build IPA	Checkout	2026-09-13T15:18:04.1467040Z branch 'main' set up to track 'origin/main'.
+Build IPA	Checkout	2026-09-13T15:18:04.1472810Z ##[endgroup]
+Build IPA	Checkout	2026-09-13T15:18:04.1474060Z ##[group]Setting up auth for fetching submodules
+Build IPA	Checkout	2026-09-13T15:18:04.1477360Z [command]/opt/homebrew/bin/git config --file /Users/runner/work/_temp/git-credentials-2c21ad95-f093-4c0b-a6c3-34fae15e71f8.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Build IPA	Checkout	2026-09-13T15:18:04.1561590Z [command]/opt/homebrew/bin/git config --global include.path /Users/runner/work/_temp/git-credentials-2c21ad95-f093-4c0b-a6c3-34fae15e71f8.config
+Build IPA	Checkout	2026-09-13T15:18:04.1631340Z [command]/opt/homebrew/bin/git config --global --unset-all url.https://github.com/.insteadOf
+Build IPA	Checkout	2026-09-13T15:18:04.1710740Z [command]/opt/homebrew/bin/git config --global --add url.https://github.com/.insteadOf git@github.com:
+Build IPA	Checkout	2026-09-13T15:18:04.1782420Z [command]/opt/homebrew/bin/git config --global --add url.https://github.com/.insteadOf org-309539288@github.com:
+Build IPA	Checkout	2026-09-13T15:18:04.1865420Z ##[endgroup]
+Build IPA	Checkout	2026-09-13T15:18:04.1866460Z ##[group]Fetching submodules
+Build IPA	Checkout	2026-09-13T15:18:04.1867380Z [command]/opt/homebrew/bin/git submodule sync --recursive
+Build IPA	Checkout	2026-09-13T15:18:04.2625190Z [command]/opt/homebrew/bin/git -c protocol.version=2 submodule update --init --force --depth=1 --recursive
+Build IPA	Checkout	2026-09-13T15:18:04.3526130Z Submodule 'OpenSSL' (https://github.com/krzyzanowskim/OpenSSL) registered for path 'OpenSSL'
+Build IPA	Checkout	2026-09-13T15:18:04.3532590Z Submodule 'litehook' (https://github.com/LiveContainer/litehook) registered for path 'litehook'
+Build IPA	Checkout	2026-09-13T15:18:04.3656960Z Cloning into '/Users/runner/work/LiveContainerTV/LiveContainerTV/OpenSSL'...
+Build IPA	Checkout	2026-09-13T15:18:08.5253970Z Cloning into '/Users/runner/work/LiveContainerTV/LiveContainerTV/litehook'...
+Build IPA	Checkout	2026-09-13T15:18:15.0526020Z From https://github.com/krzyzanowskim/OpenSSL
+Build IPA	Checkout	2026-09-13T15:18:15.0526810Z  * branch            623c84da314e85363236507ca38a4bde65df21c3 -> FETCH_HEAD
+Build IPA	Checkout	2026-09-13T15:18:16.8048820Z Submodule path 'OpenSSL': checked out '623c84da314e85363236507ca38a4bde65df21c3'
+Build IPA	Checkout	2026-09-13T15:18:16.8717760Z Submodule path 'litehook': checked out '8025e0c8ebdf5cdd1d2a4f45025813234bf9dc55'
+Build IPA	Checkout	2026-09-13T15:18:16.8863390Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local gc.auto 0
+Build IPA	Checkout	2026-09-13T15:18:17.0264390Z Entering 'OpenSSL'
+Build IPA	Checkout	2026-09-13T15:18:17.0534220Z Entering 'litehook'
+Build IPA	Checkout	2026-09-13T15:18:17.0767620Z ##[endgroup]
+Build IPA	Checkout	2026-09-13T15:18:17.0768140Z ##[group]Persisting credentials for submodules
+Build IPA	Checkout	2026-09-13T15:18:17.0780540Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'url\.https\:\/\/github\.com\/\.insteadOf' && git config --local --unset-all 'url.https://github.com/.insteadOf' || :"
+Build IPA	Checkout	2026-09-13T15:18:17.1940090Z Entering 'OpenSSL'
+Build IPA	Checkout	2026-09-13T15:18:17.2278660Z Entering 'litehook'
+Build IPA	Checkout	2026-09-13T15:18:17.2563280Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Build IPA	Checkout	2026-09-13T15:18:17.3682410Z Entering 'OpenSSL'
+Build IPA	Checkout	2026-09-13T15:18:17.3846770Z file:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/OpenSSL/config	remote.origin.url
+Build IPA	Checkout	2026-09-13T15:18:17.3922090Z Entering 'litehook'
+Build IPA	Checkout	2026-09-13T15:18:17.4038530Z file:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/litehook/config	remote.origin.url
+Build IPA	Checkout	2026-09-13T15:18:17.4131670Z [command]/opt/homebrew/bin/git config --file /Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/OpenSSL/config includeIf.gitdir:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/OpenSSL.path /Users/runner/work/_temp/git-credentials-2c21ad95-f093-4c0b-a6c3-34fae15e71f8.config
+Build IPA	Checkout	2026-09-13T15:18:17.4213590Z [command]/opt/homebrew/bin/git config --file /Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/OpenSSL/config includeIf.gitdir:/github/workspace/.git/modules/OpenSSL.path /github/runner_temp/git-credentials-2c21ad95-f093-4c0b-a6c3-34fae15e71f8.config
+Build IPA	Checkout	2026-09-13T15:18:17.4287100Z [command]/opt/homebrew/bin/git config --file /Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/litehook/config includeIf.gitdir:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/litehook.path /Users/runner/work/_temp/git-credentials-2c21ad95-f093-4c0b-a6c3-34fae15e71f8.config
+Build IPA	Checkout	2026-09-13T15:18:17.4369860Z [command]/opt/homebrew/bin/git config --file /Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/litehook/config includeIf.gitdir:/github/workspace/.git/modules/litehook.path /github/runner_temp/git-credentials-2c21ad95-f093-4c0b-a6c3-34fae15e71f8.config
+Build IPA	Checkout	2026-09-13T15:18:17.4446340Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --add 'url.https://github.com/.insteadOf' 'git@github.com:'
+Build IPA	Checkout	2026-09-13T15:18:17.5395420Z Entering 'OpenSSL'
+Build IPA	Checkout	2026-09-13T15:18:17.5604970Z Entering 'litehook'
+Build IPA	Checkout	2026-09-13T15:18:17.5848800Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --add 'url.https://github.com/.insteadOf' 'org-309539288@github.com:'
+Build IPA	Checkout	2026-09-13T15:18:17.6984810Z Entering 'OpenSSL'
+Build IPA	Checkout	2026-09-13T15:18:17.7187240Z Entering 'litehook'
+Build IPA	Checkout	2026-09-13T15:18:17.7385360Z ##[endgroup]
+Build IPA	Checkout	2026-09-13T15:18:17.7517560Z [command]/opt/homebrew/bin/git log -1 --format=%H
+Build IPA	Checkout	2026-09-13T15:18:17.7624430Z 9919a2a51f4999f70381cb79191182af3cdd4306
+Build IPA	Patch xcconfig (optional)	﻿2026-09-13T15:18:17.7901380Z ##[group]Run TEAM=""
+Build IPA	Patch xcconfig (optional)	2026-09-13T15:18:17.7902400Z ^[[36;1mTEAM=""^[[0m
+Build IPA	Patch xcconfig (optional)	2026-09-13T15:18:17.7902930Z ^[[36;1mif [ -n "$TEAM" ]; then^[[0m
+Build IPA	Patch xcconfig (optional)	2026-09-13T15:18:17.7904220Z ^[[36;1m  sed -i '' "s/DEVELOPMENT_TEAM\[config=Debug\] = .*/DEVELOPMENT_TEAM[config=Debug] = $TEAM/" xcconfigs/Global.xcconfig^[[0m
+Build IPA	Patch xcconfig (optional)	2026-09-13T15:18:17.7906160Z ^[[36;1m  sed -i '' "s/DEVELOPMENT_TEAM\[config=Release\] = .*/DEVELOPMENT_TEAM[config=Release] = $TEAM/" xcconfigs/Global.xcconfig^[[0m
+Build IPA	Patch xcconfig (optional)	2026-09-13T15:18:17.7907360Z ^[[36;1mfi^[[0m
+Build IPA	Patch xcconfig (optional)	2026-09-13T15:18:17.7983560Z shell: /bin/bash -e {0}
+Build IPA	Patch xcconfig (optional)	2026-09-13T15:18:17.7983850Z env:
+Build IPA	Patch xcconfig (optional)	2026-09-13T15:18:17.7988710Z   scheme: LiveContainer
+Build IPA	Patch xcconfig (optional)	2026-09-13T15:18:17.7989370Z   archive_path: archive
+Build IPA	Patch xcconfig (optional)	2026-09-13T15:18:17.7990110Z   MD_APPLE_SDK_ROOT: /Applications/Xcode_26.2.app
+Build IPA	Patch xcconfig (optional)	2026-09-13T15:18:17.7990890Z ##[endgroup]
+Build IPA	Archive	﻿2026-09-13T15:18:17.8609880Z ##[group]Run TEAM=""
+Build IPA	Archive	2026-09-13T15:18:17.8610840Z ^[[36;1mTEAM=""^[[0m
+Build IPA	Archive	2026-09-13T15:18:17.8611050Z ^[[36;1mif [ -z "$TEAM" ]; then^[[0m
+Build IPA	Archive	2026-09-13T15:18:17.8611360Z ^[[36;1m  # No dev team configured → build without signing.^[[0m
+Build IPA	Archive	2026-09-13T15:18:17.8611790Z ^[[36;1m  # IPA will be re-signed by AltStore/SideStore on user's device.^[[0m
+Build IPA	Archive	2026-09-13T15:18:17.8612110Z ^[[36;1m  xcodebuild archive \^[[0m
+Build IPA	Archive	2026-09-13T15:18:17.8612380Z ^[[36;1m    -archivePath "$archive_path" \^[[0m
+Build IPA	Archive	2026-09-13T15:18:17.8630810Z ^[[36;1m    -scheme "$scheme" \^[[0m
+Build IPA	Archive	2026-09-13T15:18:17.8631170Z ^[[36;1m    -project LiveContainer.xcodeproj \^[[0m
+Build IPA	Archive	2026-09-13T15:18:17.8631570Z ^[[36;1m    -sdk iphoneos -arch arm64 \^[[0m
+Build IPA	Archive	2026-09-13T15:18:17.8631870Z ^[[36;1m    -configuration Release \^[[0m
+Build IPA	Archive	2026-09-13T15:18:17.8632280Z ^[[36;1m    CODE_SIGNING_ALLOWED=NO \^[[0m
+Build IPA	Archive	2026-09-13T15:18:17.8632530Z ^[[36;1m    | xcpretty && exit ${PIPESTATUS[0]}^[[0m
+Build IPA	Archive	2026-09-13T15:18:17.8632810Z ^[[36;1melse^[[0m
+Build IPA	Archive	2026-09-13T15:18:17.8632970Z ^[[36;1m  xcodebuild archive \^[[0m
+Build IPA	Archive	2026-09-13T15:18:17.8633240Z ^[[36;1m    -archivePath "$archive_path" \^[[0m
+Build IPA	Archive	2026-09-13T15:18:17.8633590Z ^[[36;1m    -scheme "$scheme" \^[[0m
+Build IPA	Archive	2026-09-13T15:18:17.8633890Z ^[[36;1m    -project LiveContainer.xcodeproj \^[[0m
+Build IPA	Archive	2026-09-13T15:18:17.8634270Z ^[[36;1m    -sdk iphoneos -arch arm64 \^[[0m
+Build IPA	Archive	2026-09-13T15:18:17.8634690Z ^[[36;1m    -configuration Release \^[[0m
+Build IPA	Archive	2026-09-13T15:18:17.8634930Z ^[[36;1m    DEVELOPMENT_TEAM="$TEAM" \^[[0m
+Build IPA	Archive	2026-09-13T15:18:17.8635160Z ^[[36;1m    | xcpretty && exit ${PIPESTATUS[0]}^[[0m
+Build IPA	Archive	2026-09-13T15:18:17.8635830Z ^[[36;1mfi^[[0m
+Build IPA	Archive	2026-09-13T15:18:17.8675580Z shell: /bin/bash -e {0}
+Build IPA	Archive	2026-09-13T15:18:17.8675870Z env:
+Build IPA	Archive	2026-09-13T15:18:17.8676170Z   scheme: LiveContainer
+Build IPA	Archive	2026-09-13T15:18:17.8676400Z   archive_path: archive
+Build IPA	Archive	2026-09-13T15:18:17.8676740Z   MD_APPLE_SDK_ROOT: /Applications/Xcode_26.2.app
+Build IPA	Archive	2026-09-13T15:18:17.8677080Z ##[endgroup]
+Build IPA	Archive	2026-09-13T15:18:26.6471730Z --- xcodebuild: WARNING: Using the first of multiple matching destinations:
+Build IPA	Archive	2026-09-13T15:18:26.6478140Z { platform:iOS, id:dvtdevice-DVTiPhonePlaceholder-iphoneos:placeholder, name:Any iOS Device }
+Build IPA	Archive	2026-09-13T15:18:26.6481550Z { platform:iOS Simulator, id:dvtdevice-DVTiOSDeviceSimulatorPlaceholder-iphonesimulator:placeholder, name:Any iOS Simulator Device }
+Build IPA	Archive	2026-09-13T15:18:26.6485790Z { platform:macOS, arch:arm64, variant:Designed for [iPad,iPhone], id:51c5bce1c40975bc4d96857bc16d8465fdd7a7c1, name:My Mac }
+Build IPA	Archive	2026-09-13T15:18:38.9648120Z ▸ Processing empty-LiveContainerShared.plist
+Build IPA	Archive	2026-09-13T15:18:44.5903040Z ▸ Compiling zsign.mm
+Build IPA	Archive	2026-09-13T15:18:49.6701240Z ▸ Compiling util.cpp
+Build IPA	Archive	2026-09-13T15:18:50.4052610Z ▸ Compiling timer.cpp
+Build IPA	Archive	2026-09-13T15:18:54.2012340Z ▸ Compiling signing.cpp
+Build IPA	Archive	2026-09-13T15:19:06.6921060Z 
+Build IPA	Archive	2026-09-13T15:19:06.7065090Z ⚠️  /Users/runner/work/LiveContainerTV/LiveContainerTV/SideStoreSupport/SideStore.swift:150:25: capture of 'ext' with non-Sendable type 'NSExtension' in a '@Sendable' closure
+Build IPA	Archive	2026-09-13T15:19:06.7200000Z 
+Build IPA	Archive	2026-09-13T15:19:06.7309460Z                         ext._kill(9)
+Build IPA	Archive	2026-09-13T15:19:06.7412820Z                         ^
+Build IPA	Archive	2026-09-13T15:19:06.7513940Z 
+Build IPA	Archive	2026-09-13T15:19:06.7614660Z 
+Build IPA	Archive	2026-09-13T15:19:06.7716100Z ▸ Compiling sha.cpp
+Build IPA	Archive	2026-09-13T15:19:06.7817410Z ▸ Compiling openssl.cpp
+Build IPA	Archive	2026-09-13T15:19:07.2458260Z 
+Build IPA	Archive	2026-09-13T15:19:07.2581920Z ⚠️  /Users/runner/work/LiveContainerTV/LiveContainerTV/ZSign/openssl.cpp:122:6: unused variable 'code' [-Wunused-variable]
+Build IPA	Archive	2026-09-13T15:19:07.2583460Z 
+Build IPA	Archive	2026-09-13T15:19:07.2683560Z   122 |         int code = BIO_puts(ldapbio, a.c_str());
+Build IPA	Archive	2026-09-13T15:19:07.2784660Z            ^
+Build IPA	Archive	2026-09-13T15:19:07.2898650Z 
+Build IPA	Archive	2026-09-13T15:19:07.2999360Z 
+Build IPA	Archive	2026-09-13T15:19:07.6429960Z ▸ Compiling macho.cpp
+Build IPA	Archive	2026-09-13T15:19:09.3143100Z ▸ Compiling log.cpp
+Build IPA	Archive	2026-09-13T15:19:09.3244540Z ▸ Compiling json.cpp
+Build IPA	Archive	2026-09-13T15:19:10.7964810Z ▸ Compiling fs.cpp
+Build IPA	Archive	2026-09-13T15:19:10.8595560Z ▸ Compiling base64.cpp
+Build IPA	Archive	2026-09-13T15:19:21.3914320Z ▸ Compiling archo.cpp
+Build IPA	Archive	2026-09-13T15:19:21.4051380Z ▸ Compiling Utils.mm
+Build IPA	Archive	2026-09-13T15:19:21.4172260Z ▸ Linking ZSign.dylib
+Build IPA	Archive	2026-09-13T15:19:21.4298590Z ▸ Generating 'ZSign.dylib.dSYM'
+Build IPA	Archive	2026-09-13T15:19:21.4357910Z ▸ Compiling TestJITLess.m
+Build IPA	Archive	2026-09-13T15:19:21.4460950Z ▸ Linking TestJITLess.dylib
+Build IPA	Archive	2026-09-13T15:19:21.4564020Z ▸ Compiling Notification.m
+Build IPA	Archive	2026-09-13T15:19:21.4667870Z ▸ Compiling mach_excServer.c
+Build IPA	Archive	2026-09-13T15:19:21.4771810Z ▸ Compiling SideStoreLiveProcessHandler.m
+Build IPA	Archive	2026-09-13T15:19:21.4874230Z ▸ Compiling UIKit+GuestHooks.m
+Build IPA	Archive	2026-09-13T15:19:21.4910940Z ** ARCHIVE FAILED **
+Build IPA	Archive	2026-09-13T15:19:21.4911530Z ▸ Compiling TweakLoader.m
+Build IPA	Archive	2026-09-13T15:19:21.5010950Z 
+Build IPA	Archive	2026-09-13T15:19:21.5013630Z ▸ Compiling DocumentPicker.m
+Build IPA	Archive	2026-09-13T15:19:21.5113700Z 
+Build IPA	Archive	2026-09-13T15:19:21.5121360Z ▸ Linking TweakLoader.dylib
+Build IPA	Archive	2026-09-13T15:19:21.5283650Z The following build commands failed:
+Build IPA	Archive	2026-09-13T15:19:21.5285190Z ▸ Generating 'TweakLoader.dylib.dSYM'
+Build IPA	Archive	2026-09-13T15:19:21.5390460Z 	CompileC /Users/runner/Library/Developer/Xcode/DerivedData/LiveContainer-fkbqtvmjjkbzcracoonoxwvmzroj/Build/Intermediates.noindex/ArchiveIntermediates/LiveContainer/IntermediateBuildFilesPath/LiveContainer.build/Release-iphoneos/LiveContainerShared.build/Objects-normal/arm64/LCMachOUtils.o /Users/runner/work/LiveContainerTV/LiveContainerTV/LiveContainer/LCMachOUtils.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler (in target 'LiveContainerShared' from project 'LiveContainer')
+Build IPA	Archive	2026-09-13T15:19:21.5399890Z ▸ Compiling utils.m
+Build IPA	Archive	2026-09-13T15:19:21.5501140Z 	Archiving project LiveContainer with scheme LiveContainer
+Build IPA	Archive	2026-09-13T15:19:21.5603250Z (2 failures)
+Build IPA	Archive	2026-09-13T15:19:21.5603870Z ▸ Compiling main.m
+Build IPA	Archive	2026-09-13T15:19:21.5604370Z ▸ Generating 'TestJITLess.dylib.dSYM'
+Build IPA	Archive	2026-09-13T15:19:21.5708520Z ▸ Compiling dyld_bypass_validation.m
+Build IPA	Archive	2026-09-13T15:19:21.5807800Z ▸ Compiling SecItem.m
+Build IPA	Archive	2026-09-13T15:19:21.5909220Z ▸ Compiling litehook.c
+Build IPA	Archive	2026-09-13T15:19:21.6011660Z ▸ Compiling NSUserDefaults.m
+Build IPA	Archive	2026-09-13T15:19:21.6111890Z ▸ Compiling NSURLSessionConfiguration+GuestHooks.m
+Build IPA	Archive	2026-09-13T15:19:21.6212850Z ▸ Compiling NSFileManager+GuestHooks.m
+Build IPA	Archive	2026-09-13T15:19:21.6314600Z ▸ Compiling NSBundle+FixCydiaSubstrate.m
+Build IPA	Archive	2026-09-13T15:19:21.6415020Z ▸ Compiling Localization.m
+Build IPA	Archive	2026-09-13T15:19:21.6518600Z ▸ Compiling LiveContainerShared_vers.c
+Build IPA	Archive	2026-09-13T15:19:21.6619340Z ▸ Compiling IDFV.m
+Build IPA	Archive	2026-09-13T15:19:21.6720290Z ▸ Compiling Dyld.m
+Build IPA	Archive	2026-09-13T15:19:21.6824730Z ▸ Compiling Dead10ccFix.m
+Build IPA	Archive	2026-09-13T15:19:21.6830200Z ▸ Compiling XPCServer.m
+Build IPA	Archive	2026-09-13T15:19:21.6926530Z ▸ Compiling XPCClient.m
+Build IPA	Archive	2026-09-13T15:19:21.7030820Z ▸ Compiling SideStoreSupport_vers.c
+Build IPA	Archive	2026-09-13T15:19:21.7133070Z ▸ Compiling LCSharedUtils.m
+Build IPA	Archive	2026-09-13T15:19:21.7258300Z ▸ Compiling LCMachOUtils.m
+Build IPA	Archive	2026-09-13T15:19:21.7365470Z ▸ Compiling SideStoreHooks.m
+Build IPA	Archive	2026-09-13T15:19:21.7471030Z ▸ Compiling LCBootstrap.m
+Build IPA	Archive	2026-09-13T15:19:21.7574480Z     Run script build phase 'Run Script' will be run during every build because it does not specify any outputs. To address this issue, either add output dependencies to the script phase, or configure it to run in every build by unchecking "Based on dependency analysis" in the script phase. (in target 'LiveContainer' from project 'LiveContainer')
+Build IPA	Archive	2026-09-13T15:19:21.7757930Z ##[error]Process completed with exit code 65.
+Build IPA	Post Checkout	﻿2026-09-13T15:19:21.8443560Z Post job cleanup.
+Build IPA	Post Checkout	2026-09-13T15:19:22.7655740Z [command]/opt/homebrew/bin/git version
+Build IPA	Post Checkout	2026-09-13T15:19:22.8112600Z git version 2.55.0
+Build IPA	Post Checkout	2026-09-13T15:19:22.8299090Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/d3b26d15-f612-4866-88e7-26b8454de32c/.gitconfig'
+Build IPA	Post Checkout	2026-09-13T15:19:22.8310610Z Temporarily overriding HOME='/Users/runner/work/_temp/d3b26d15-f612-4866-88e7-26b8454de32c' before making global git config changes
+Build IPA	Post Checkout	2026-09-13T15:19:22.8330920Z Adding repository directory to the temporary git global config as a safe directory
+Build IPA	Post Checkout	2026-09-13T15:19:22.8348520Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/LiveContainerTV/LiveContainerTV
+Build IPA	Post Checkout	2026-09-13T15:19:22.8474230Z Removing SSH command configuration
+Build IPA	Post Checkout	2026-09-13T15:19:22.8486210Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+Build IPA	Post Checkout	2026-09-13T15:19:22.8644660Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Build IPA	Post Checkout	2026-09-13T15:19:23.0898210Z Entering 'OpenSSL'
+Build IPA	Post Checkout	2026-09-13T15:19:23.1514500Z Entering 'litehook'
+Build IPA	Post Checkout	2026-09-13T15:19:23.2087520Z Removing HTTP extra header
+Build IPA	Post Checkout	2026-09-13T15:19:23.2097250Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Build IPA	Post Checkout	2026-09-13T15:19:23.2229060Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Build IPA	Post Checkout	2026-09-13T15:19:23.3938840Z Entering 'OpenSSL'
+Build IPA	Post Checkout	2026-09-13T15:19:23.4526180Z Entering 'litehook'
+Build IPA	Post Checkout	2026-09-13T15:19:23.5044380Z Removing includeIf entries pointing to credentials config files
+Build IPA	Post Checkout	2026-09-13T15:19:23.5054230Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Build IPA	Post Checkout	2026-09-13T15:19:23.5171050Z includeif.gitdir:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git.path
+Build IPA	Post Checkout	2026-09-13T15:19:23.5173020Z includeif.gitdir:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git/worktrees/*.path
+Build IPA	Post Checkout	2026-09-13T15:19:23.5173710Z includeif.gitdir:/github/workspace/.git.path
+Build IPA	Post Checkout	2026-09-13T15:19:23.5174460Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Build IPA	Post Checkout	2026-09-13T15:19:23.5179180Z [command]/opt/homebrew/bin/git config --local --get-all includeif.gitdir:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git.path
+Build IPA	Post Checkout	2026-09-13T15:19:23.5280130Z /Users/runner/work/_temp/git-credentials-2c21ad95-f093-4c0b-a6c3-34fae15e71f8.config
+Build IPA	Post Checkout	2026-09-13T15:19:23.5300430Z [command]/opt/homebrew/bin/git config --local --unset includeif.gitdir:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git.path /Users/runner/work/_temp/git-credentials-2c21ad95-f093-4c0b-a6c3-34fae15e71f8.config
+Build IPA	Post Checkout	2026-09-13T15:19:23.5431070Z [command]/opt/homebrew/bin/git config --local --get-all includeif.gitdir:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git/worktrees/*.path
+Build IPA	Post Checkout	2026-09-13T15:19:23.5535920Z /Users/runner/work/_temp/git-credentials-2c21ad95-f093-4c0b-a6c3-34fae15e71f8.config
+Build IPA	Post Checkout	2026-09-13T15:19:23.5554030Z [command]/opt/homebrew/bin/git config --local --unset includeif.gitdir:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git/worktrees/*.path /Users/runner/work/_temp/git-credentials-2c21ad95-f093-4c0b-a6c3-34fae15e71f8.config
+Build IPA	Post Checkout	2026-09-13T15:19:23.5712090Z [command]/opt/homebrew/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+Build IPA	Post Checkout	2026-09-13T15:19:23.5811890Z /github/runner_temp/git-credentials-2c21ad95-f093-4c0b-a6c3-34fae15e71f8.config
+Build IPA	Post Checkout	2026-09-13T15:19:23.5819480Z [command]/opt/homebrew/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-2c21ad95-f093-4c0b-a6c3-34fae15e71f8.config
+Build IPA	Post Checkout	2026-09-13T15:19:23.5917290Z [command]/opt/homebrew/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Build IPA	Post Checkout	2026-09-13T15:19:23.6021720Z /github/runner_temp/git-credentials-2c21ad95-f093-4c0b-a6c3-34fae15e71f8.config
+Build IPA	Post Checkout	2026-09-13T15:19:23.6032760Z [command]/opt/homebrew/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-2c21ad95-f093-4c0b-a6c3-34fae15e71f8.config
+Build IPA	Post Checkout	2026-09-13T15:19:23.6182790Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Build IPA	Post Checkout	2026-09-13T15:19:23.7701210Z Entering 'OpenSSL'
+Build IPA	Post Checkout	2026-09-13T15:19:23.7885490Z file:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/OpenSSL/config	remote.origin.url
+Build IPA	Post Checkout	2026-09-13T15:19:23.8014800Z Entering 'litehook'
+Build IPA	Post Checkout	2026-09-13T15:19:23.8216700Z file:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/litehook/config	remote.origin.url
+Build IPA	Post Checkout	2026-09-13T15:19:23.8338250Z [command]/opt/homebrew/bin/git config --file /Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/OpenSSL/config --name-only --get-regexp ^includeIf\.gitdir:
+Build IPA	Post Checkout	2026-09-13T15:19:23.8433860Z includeif.gitdir:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/OpenSSL.path
+Build IPA	Post Checkout	2026-09-13T15:19:23.8452250Z includeif.gitdir:/github/workspace/.git/modules/OpenSSL.path
+Build IPA	Post Checkout	2026-09-13T15:19:23.8454880Z [command]/opt/homebrew/bin/git config --file /Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/OpenSSL/config --get-all includeif.gitdir:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/OpenSSL.path
+Build IPA	Post Checkout	2026-09-13T15:19:23.8595120Z /Users/runner/work/_temp/git-credentials-2c21ad95-f093-4c0b-a6c3-34fae15e71f8.config
+Build IPA	Post Checkout	2026-09-13T15:19:23.8607200Z [command]/opt/homebrew/bin/git config --file /Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/OpenSSL/config --unset includeif.gitdir:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/OpenSSL.path /Users/runner/work/_temp/git-credentials-2c21ad95-f093-4c0b-a6c3-34fae15e71f8.config
+Build IPA	Post Checkout	2026-09-13T15:19:23.8705610Z [command]/opt/homebrew/bin/git config --file /Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/OpenSSL/config --get-all includeif.gitdir:/github/workspace/.git/modules/OpenSSL.path
+Build IPA	Post Checkout	2026-09-13T15:19:23.8812610Z /github/runner_temp/git-credentials-2c21ad95-f093-4c0b-a6c3-34fae15e71f8.config
+Build IPA	Post Checkout	2026-09-13T15:19:23.8819920Z [command]/opt/homebrew/bin/git config --file /Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/OpenSSL/config --unset includeif.gitdir:/github/workspace/.git/modules/OpenSSL.path /github/runner_temp/git-credentials-2c21ad95-f093-4c0b-a6c3-34fae15e71f8.config
+Build IPA	Post Checkout	2026-09-13T15:19:23.8918800Z [command]/opt/homebrew/bin/git config --file /Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/litehook/config --name-only --get-regexp ^includeIf\.gitdir:
+Build IPA	Post Checkout	2026-09-13T15:19:23.9010820Z includeif.gitdir:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/litehook.path
+Build IPA	Post Checkout	2026-09-13T15:19:23.9011350Z includeif.gitdir:/github/workspace/.git/modules/litehook.path
+Build IPA	Post Checkout	2026-09-13T15:19:23.9027560Z [command]/opt/homebrew/bin/git config --file /Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/litehook/config --get-all includeif.gitdir:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/litehook.path
+Build IPA	Post Checkout	2026-09-13T15:19:23.9130200Z /Users/runner/work/_temp/git-credentials-2c21ad95-f093-4c0b-a6c3-34fae15e71f8.config
+Build IPA	Post Checkout	2026-09-13T15:19:23.9143010Z [command]/opt/homebrew/bin/git config --file /Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/litehook/config --unset includeif.gitdir:/Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/litehook.path /Users/runner/work/_temp/git-credentials-2c21ad95-f093-4c0b-a6c3-34fae15e71f8.config
+Build IPA	Post Checkout	2026-09-13T15:19:23.9259070Z [command]/opt/homebrew/bin/git config --file /Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/litehook/config --get-all includeif.gitdir:/github/workspace/.git/modules/litehook.path
+Build IPA	Post Checkout	2026-09-13T15:19:23.9339990Z /github/runner_temp/git-credentials-2c21ad95-f093-4c0b-a6c3-34fae15e71f8.config
+Build IPA	Post Checkout	2026-09-13T15:19:23.9350970Z [command]/opt/homebrew/bin/git config --file /Users/runner/work/LiveContainerTV/LiveContainerTV/.git/modules/litehook/config --unset includeif.gitdir:/github/workspace/.git/modules/litehook.path /github/runner_temp/git-credentials-2c21ad95-f093-4c0b-a6c3-34fae15e71f8.config
+Build IPA	Post Checkout	2026-09-13T15:19:23.9450100Z Removing credentials config '/Users/runner/work/_temp/git-credentials-2c21ad95-f093-4c0b-a6c3-34fae15e71f8.config'
+Build IPA	Complete job	﻿2026-09-13T15:19:23.9684040Z Evaluate and set job outputs
+Build IPA	Complete job	2026-09-13T15:19:23.9691150Z Set output 'artifact'
+Build IPA	Complete job	2026-09-13T15:19:23.9692710Z Cleaning up orphan processes
+Build IPA	Complete job	2026-09-13T15:19:24.1577880Z Terminate orphan process: pid (1904) (ibtoold)
