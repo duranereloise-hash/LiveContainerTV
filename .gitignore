@@ -9,3 +9,5 @@ Resources/Frameworks/OpenSSL.framework
 apps_nightly.json
 "build_log.txt"  
 "run_log.txt"  
+"fix_log.txt"
+"diff_out.txt"  
