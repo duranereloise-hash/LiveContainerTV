@@ -148,6 +148,29 @@ int LCPatchExecSlice(const char *path, struct mach_header_64 *header, bool doInj
             }
         } else if(command->cmd == 0x114514) {
             dylibLoaderCommand = (struct dylib_command *)command;
+        } else if(command->cmd == LC_BUILD_VERSION) {
+            struct build_version_command* buildVer = (struct build_version_command*)command;
+            if (buildVer->platform == PLATFORM_APPLETVOS || buildVer->platform == PLATFORM_APPLETVOSSIMULATOR) {
+                // tvOS apps are built against the tvOS SDK. dyld on iOS hard-rejects
+                // binaries whose LC_BUILD_VERSION platform is not iOS, so spoof it
+                // to "iOS simulator"-compatible platform. Guest code still links
+                // against /System/Library dylibs, which resolves fine on-device.
+                buildVer->platform = buildVer->platform == PLATFORM_APPLETVOSSIMULATOR ? PLATFORM_IOSSIMULATOR : PLATFORM_IOS;
+            }
+        } else if (command->cmd == LC_VERSION_MIN_IPHONEOS && header->cputype == CPU_TYPE_ARM64) {
+            struct version_min_command* versionMin = (struct version_min_command*)command;
+            // Also handle LC_VERSION_MIN_* variants (older tvOS SDKs emit
+            // LC_VERSION_MIN_TVOS): tvOS on ARM64 is 64-bit, iOS runs 64-bit too,
+            // the version field is semantically interchangeable here.
+            if (versionMin->version >> 16 == 0) {
+                versionMin->version = 13 << 16;
+            }
+        } else if (command->cmd == LC_VERSION_MIN_TVOS) {
+            struct version_min_command* versionMin = (struct version_min_command*)command;
+            versionMin->cmd = LC_VERSION_MIN_IPHONEOS;
+            if (versionMin->version >> 16 == 0) {
+                versionMin->version = 13 << 16;
+            }
         } else if(command->cmd == LC_SEGMENT_64) {
             struct segment_command_64* seglc = (struct segment_command_64*)command;
             loadCommandSegCount++;
@@ -232,6 +255,67 @@ int LCPatchExecSlice(const char *path, struct mach_header_64 *header, bool doInj
     free(depPaths);
     
     return ans;
+}
+
+static NSDictionary* readInfoPlist(NSURL *bundleURL) {
+    return [NSDictionary dictionaryWithContentsOfURL:[bundleURL URLByAppendingPathComponent:@"Info.plist"]];
+}
+
+static void writeInfoPlist(NSDictionary *plist, NSURL *bundleURL) {
+    NSURL *infoURL = [bundleURL URLByAppendingPathComponent:@"Info.plist"];
+    [plist writeBinToFile:infoURL.path atomically:YES];
+}
+
+BOOL LCIsAppBundleTVOS(NSURL *bundleURL) {
+    NSDictionary *info = readInfoPlist(bundleURL);
+    if (!info) return NO;
+    NSArray *family = info[@"UIDeviceFamily"];
+    if (![family isKindOfClass:NSArray.class]) return NO;
+    for (NSNumber *n in family) {
+        if (n.intValue == 3) return YES; // tvOS device family
+    }
+    return NO;
+}
+
+BOOL LCPatchAppBundleForTVOS(NSURL *bundleURL) {
+    NSMutableDictionary *info = [[readInfoPlist(bundleURL) mutableCopy] autorelease];
+    if (!info) return NO;
+    
+    NSMutableArray *family = [[info[@"UIDeviceFamily"] mutableCopy] autorelease];
+    if (![family isKindOfClass:NSMutableArray.class]) {
+        if ([info[@"UIDeviceFamily"] isKindOfClass:NSArray.class]) {
+            family = [[info[@"UIDeviceFamily"] mutableCopy] autorelease];
+        } else {
+            family = [NSMutableArray array];
+        }
+    }
+    
+    // tvOS device family = 3, replace with iOS (1) + iPadOS (2)
+    BOOL hadTV = NO;
+    for (int i = (int)family.count - 1; i >= 0; i--) {
+        if ([family[i] intValue] == 3) {
+            [family removeObjectAtIndex:i];
+            hadTV = YES;
+        }
+    }
+    if (!hadTV) return NO; // not a tvOS app
+    
+    if (![family containsObject:@1]) [family addObject:@1];
+    if (![family containsObject:@2]) [family addObject:@2];
+    info[@"UIDeviceFamily"] = family;
+    
+    // Strip tvOS-specific required device capabilities that don't exist on iOS
+    NSMutableArray *caps = [[info[@"UIRequiredDeviceCapabilities"] mutableCopy] autorelease];
+    if ([caps isKindOfClass:NSMutableArray.class]) {
+        NSArray *tvOnlyCaps = @[@"opengl-es-2", @"opengl-es-3", @"arkit"];
+        for (NSString *cap in tvOnlyCaps) {
+            [caps removeObject:cap];
+        }
+        info[@"UIRequiredDeviceCapabilities"] = caps;
+    }
+    
+    writeInfoPlist(info, bundleURL);
+    return YES;
 }
 
 NSString *LCParseMachO(const char *path, bool readOnly, LCParseMachOCallback callback) {

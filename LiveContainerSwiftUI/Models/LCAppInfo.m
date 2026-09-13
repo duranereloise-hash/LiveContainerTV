@@ -307,6 +307,9 @@
     NSFileManager* fm = NSFileManager.defaultManager;
     NSString *execPath = [NSString stringWithFormat:@"%@/%@", appPath, _infoPlist[@"CFBundleExecutable"]];
     
+    // Patch tvOS bundle Info.plist so iOS accepts the device-family
+    LCPatchAppBundleForTVOS([NSURL fileURLWithPath:appPath]);
+    
     // Update patch
     int currentPatchRev = 7;
     bool needPatch = [info[@"LCPatchRevision"] intValue] < currentPatchRev;
