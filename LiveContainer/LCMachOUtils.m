@@ -151,27 +151,13 @@ int LCPatchExecSlice(const char *path, struct mach_header_64 *header, bool doInj
             dylibLoaderCommand = (struct dylib_command *)command;
         } else if(command->cmd == LC_BUILD_VERSION) {
             struct build_version_command* buildVer = (struct build_version_command*)command;
-            if (buildVer->platform == PLATFORM_APPLETVOS || buildVer->platform == PLATFORM_APPLETVOSSIMULATOR) {
-                // tvOS apps are built against the tvOS SDK. dyld on iOS hard-rejects
-                // binaries whose LC_BUILD_VERSION platform is not iOS, so spoof it
-                // to "iOS simulator"-compatible platform. Guest code still links
-                // against /System/Library dylibs, which resolves fine on-device.
-                buildVer->platform = buildVer->platform == PLATFORM_APPLETVOSSIMULATOR ? PLATFORM_IOSSIMULATOR : PLATFORM_IOS;
-            }
-        } else if (command->cmd == LC_VERSION_MIN_IPHONEOS && header->cputype == CPU_TYPE_ARM64) {
-            struct version_min_command* versionMin = (struct version_min_command*)command;
-            // Also handle LC_VERSION_MIN_* variants (older tvOS SDKs emit
-            // LC_VERSION_MIN_TVOS): tvOS on ARM64 is 64-bit, iOS runs 64-bit too,
-            // the version field is semantically interchangeable here.
-            if (versionMin->version >> 16 == 0) {
-                versionMin->version = 13 << 16;
+            // platform 3 = tvOS, 8 = tvOS Simulator, 2 = iOS, 7 = iOS Simulator
+            if (buildVer->platform == 3 || buildVer->platform == 8) {
+                buildVer->platform = (buildVer->platform == 8) ? 7 : 2;
             }
         } else if (command->cmd == LC_VERSION_MIN_TVOS) {
             struct version_min_command* versionMin = (struct version_min_command*)command;
             versionMin->cmd = LC_VERSION_MIN_IPHONEOS;
-            if (versionMin->version >> 16 == 0) {
-                versionMin->version = 13 << 16;
-            }
         } else if(command->cmd == LC_SEGMENT_64) {
             struct segment_command_64* seglc = (struct segment_command_64*)command;
             loadCommandSegCount++;

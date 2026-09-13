@@ -45,8 +45,7 @@ jobs:
               -project LiveContainer.xcodeproj \
               -sdk iphoneos -arch arm64 \
               -configuration Release \
-              CODE_SIGNING_ALLOWED=NO \
-              | xcpretty && exit ${PIPESTATUS[0]}
+              CODE_SIGNING_ALLOWED=NO
           else
             xcodebuild archive \
               -archivePath "$archive_path" \
@@ -54,8 +53,7 @@ jobs:
               -project LiveContainer.xcodeproj \
               -sdk iphoneos -arch arm64 \
               -configuration Release \
-              DEVELOPMENT_TEAM="$TEAM" \
-              | xcpretty && exit ${PIPESTATUS[0]}
+              DEVELOPMENT_TEAM="$TEAM"
           fi
 
       - name: Create IPA (standalone)
