@@ -265,13 +265,13 @@ BOOL LCIsAppBundleTVOS(NSURL *bundleURL) {
 }
 
 BOOL LCPatchAppBundleForTVOS(NSURL *bundleURL) {
-    NSMutableDictionary *info = [[readInfoPlist(bundleURL) mutableCopy] autorelease];
+    NSMutableDictionary *info = [readInfoPlist(bundleURL) mutableCopy];
     if (!info) return NO;
     
-    NSMutableArray *family = [[info[@"UIDeviceFamily"] mutableCopy] autorelease];
+    NSMutableArray *family = [info[@"UIDeviceFamily"] mutableCopy];
     if (![family isKindOfClass:NSMutableArray.class]) {
         if ([info[@"UIDeviceFamily"] isKindOfClass:NSArray.class]) {
-            family = [[info[@"UIDeviceFamily"] mutableCopy] autorelease];
+            family = [info[@"UIDeviceFamily"] mutableCopy];
         } else {
             family = [NSMutableArray array];
         }
@@ -292,7 +292,7 @@ BOOL LCPatchAppBundleForTVOS(NSURL *bundleURL) {
     info[@"UIDeviceFamily"] = family;
     
     // Strip tvOS-specific required device capabilities that don't exist on iOS
-    NSMutableArray *caps = [[info[@"UIRequiredDeviceCapabilities"] mutableCopy] autorelease];
+    NSMutableArray *caps = [info[@"UIRequiredDeviceCapabilities"] mutableCopy];
     if ([caps isKindOfClass:NSMutableArray.class]) {
         NSArray *tvOnlyCaps = @[@"opengl-es-2", @"opengl-es-3", @"arkit"];
         for (NSString *cap in tvOnlyCaps) {
